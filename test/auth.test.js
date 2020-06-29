@@ -1,7 +1,7 @@
 const request = require("supertest");
-const User = require("../model/authModel");
 let server=require("../app");
-const dbHandler = require("./db-test")
+const dbHandler = require("./db-test");
+const { User } = require("../models");
 describe('authentication', () => {
     let newUser = {
 		username:"test2",
