@@ -18,11 +18,11 @@ module.exports = function(app) {
         middleware.authHandler.protectedRoute, routes.userRoute);
     app.use("/api/:userId", middleware.authHandler.setCurrentUser,
         middleware.authHandler.protectedRoute, routes.postRoute);
-    app.use(function(req, res, next){
-        let error = new Error("Page not found")
-        error.status = 404
-        next(error)
-    })
+    // app.use(function(req, res, next){
+    //     let error = new Error("Page not found")
+    //     error.status = 404
+    //     next(error)
+    // })
     app.use(middleware.errorHandler);
 
 
