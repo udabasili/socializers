@@ -1,0 +1,39 @@
+.nav-icon{
+    background-color: black;
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    background-color: black;
+    color: $color-primary-light;
+    position: relative;
+
+    @include response-website(phone) {
+        transform: scale(.6);
+
+
+    }
+
+    &__icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.notification{
+    background-color: red;
+    position: absolute;
+    top: 10%;
+    padding: 2px 7px;
+    border-radius: 50%;
+    transform: translate(-50%, -30%);
+    left: 100%;
+
+    .count{
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}

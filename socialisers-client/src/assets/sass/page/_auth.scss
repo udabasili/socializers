@@ -1,0 +1,48 @@
+
+.auth{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    &__left-section{
+        width: 50%;
+        top: 0;
+        background-color: $color-primary-light;
+        clip-path: polygon(
+            0 0 ,
+            70% 0 ,
+            100% 100%,
+            0 100%
+        );
+
+        @include response-website(phone) {
+            width: 0;
+
+        }
+        @include response-website(tab-port) { 
+        }
+
+        @include response-website(tab-land) { 
+        }
+       
+    }
+
+    &__right-section{
+        margin-top: $navigation-height;
+        text-align: center;
+        width: 50%;
+
+        @include response-website(phone) {
+            width: 100%;
+
+        }
+        @include response-website(tab-port) { 
+        }
+        
+        @include response-website(tab-land) { 
+        }
+      
+    }
+}

@@ -1,0 +1,55 @@
+So, in order to build a social networking website of really good quality, 
+one must consider the following features: 
+
+    Registration. The main requirements are simplicity (exclude unnecessary steps), 
+    reliability (make sure user data is protected), 
+    and multi-variance (offer several options to register).
+
+    Profile. Creating a user account is the next logical step after registration. 
+    The profile includes information about the user and also offers access to his photo albums,
+     personal information, and more.
+
+    Posts. Of course, the main emphasis is on the ability to publish posts. 
+    That is, the user should be able to share news, interesting information, 
+    and other things with his friends.
+
+    Full-featured Search for groups, brands, people.
+     Any social network website should help people in finding each other. 
+
+    Friendship. A user must be able to send a friend request or 
+    just follow the account he likes in order to see its news in his news feed.
+
+    News Feed. The news feed we've already mentioned allows the user to see
+     what is happening in the lives of his friends and people he is following.
+
+    The Wall. Now it's about the news of the user himself. On the wall,
+     he can place links to favorite articles, write posts, create photo and video galleries. 
+
+    Chat. If you intend to create a social media website, don't forget 
+    the instant messaging system: users should have a chance 
+    to chat both in a private mode and in groups.
+
+
+    File Transfer. Sometimes when communicating a user needs to share a 
+    file with his conversational partner. 
+    Social network features have to include the ability to transfer files as simple as possible, 
+    just in the process of online conversation.
+
+    Deferred Reading. Facebook provides a user with the possibility to save 
+    articles and posts “for later,” so that he can find the material he liked without any trouble.
+
+    Notifications, another essential feature of almost any application.
+
+    User Status. Some users don’t mind clarifying their status in order to 
+    notify others about certain changes in their lives. 
+    This may relate to personal life (married, divorced, in love, etc.), 
+    work (let's say, you've started to work in a new place), and similar things.
+
+    Analytics. Such a feature is extremely necessary for both users and you, 
+    as the owner of the resource. 
+    Users will especially need analytical tools if they want to
+     promote their products or services through your site.
+
+    Admin Access. The feature is aimed at 
+    those who will manage the site, block unreliable users, 
+    and perform other administrative functions

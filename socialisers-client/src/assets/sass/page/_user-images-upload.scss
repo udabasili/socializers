@@ -1,0 +1,21 @@
+.user-images-upload{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+
+}
+
+.user-images{
+    display: grid;
+    width: 60%;
+    height: 60%;
+    margin-top: $navigation-height;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5%; 
+    column-gap: 10px;
+
+
+}

@@ -1,0 +1,49 @@
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+  
+  .submit-button{
+    margin: 10px;
+  }
+}
+
+.close-button{
+  align-self: flex-end;
+  cursor: pointer;
+  position: absolute;
+  top: .6rem;
+  left: 95%;
+}
+
+.submit-button{
+    outline: none;
+    border: none;
+    display: inline-block;
+    margin: 20px auto;
+    cursor: pointer;
+    background-color: $color-primary-dark;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 30px;
+
+    @include response-website(phone) {
+        padding: 10px 15px;
+      }
+      @include response-website(tab-port) { 
+        padding: 12px 18px;
+
+      }
+      @include response-website(tab-land) { 
+        padding: 12px 18px;
+
+      }
+  
+}
+
+.link-button{
+    outline: none;
+    border: none;
+    display: inline-block;
+    margin: 20px auto;
+}

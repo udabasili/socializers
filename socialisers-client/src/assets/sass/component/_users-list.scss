@@ -1,0 +1,62 @@
+.users{
+    
+    width: 80%;
+    height: 100%;
+    position: relative;
+
+    .close-button{
+        left: 99%;
+        top: 10%;
+    }
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10%;
+        
+    }
+
+    &__item{
+        margin-top: 5px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        background-color: $color-primary-light;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        /* Add some padding */
+        
+    }
+
+    &__user{
+        display: inherit;
+        align-items: center;
+
+    }
+
+    &__add-button{
+        color: $color-primary-dark;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+}
+
+.username{
+
+    &,
+    &:link{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary-dark;
+        font-weight: 600;
+    }
+    &:hover,
+    &:visited{
+        transform: scale(1.1);
+    }
+
+    cursor: pointer;
+
+}

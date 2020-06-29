@@ -1,0 +1,14 @@
+.world-news {
+    @include defaultPadding;
+    width: 80vw;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    grid-template-columns: repeat(3, 30%);
+    row-gap: 10%;
+    column-gap: 2%;
+
+
+
+}

@@ -1,0 +1,138 @@
+.profile{
+    display: grid;
+    @include defaultPadding;
+    justify-content: center;
+    max-width: 100%;
+    height: 90vh;
+    grid-template-columns: 30% 50%;
+    column-gap: 2%;
+
+    @include response-website(phone) {
+        align-items: center;
+        max-width: 100%;
+        grid-template-columns: 90%;
+        grid-template-rows: 60% 200%;
+        row-gap: 1px;
+
+
+
+    }
+
+    @include response-website(tab-port) {
+        align-items: center;
+        max-width: 80%;
+        grid-template-columns: 50%;
+        grid-template-rows: 60% 120%;
+        row-gap: 4rem;
+
+
+    }
+
+    @include response-website(tab-land) {
+        align-items: center;
+        max-width: 100%;
+        grid-template-columns: 60%;
+        grid-template-rows: 50% 90%;
+        row-gap: 3rem;
+    }
+
+    &__left{
+        background-color: $color-primary-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__right{
+        background-color: $color-primary-light;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 40% 60% ;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+
+        @include response-website(phone){
+            padding: 3px;
+        }
+    }
+
+    &__avatar{
+        border: $color-primary-dark 2px solid;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 40%;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        z-index: 0;
+
+        @include response-website(phone){
+            width: 40%;
+            height: 40%;
+        }
+
+        @include response-website(tab-port) {
+             width: 50%;
+             height: 40%;
+        }
+
+        @include response-website(tab-land) {
+            width: 30%;
+            height: 40%;
+        }
+    }
+
+    &__avatar-edit{
+        position: absolute;
+        bottom: 0;
+        color: red;
+        z-index: 10;
+        right: 50px;
+    }
+
+    &__user-info{
+        text-align: center;
+    }
+
+    &__bio{
+        padding: 2rem;
+    }
+
+    &__bio-title{
+        display: block;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    &_bio-content{
+
+    }
+
+    &__interests{
+        padding: 2rem;
+    }
+    &__interest-header{
+        display: block;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    &__interest-title{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: block;
+        padding: 1.5rem 0 0 1.5rem;
+
+        
+    }
+
+    &__interest-content{
+        padding: .5rem 0 0 1.5rem;
+
+    }
+
+}

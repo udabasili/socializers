@@ -1,0 +1,36 @@
+.friends__list{
+    @include defaultPadding;
+    width: 80vw;
+    display: grid;
+    justify-content: center;
+    height: 60vh;
+    grid-template-columns:  repeat(3, 30%);
+    column-gap: 2%;
+
+    @include response-website(phone) {
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 1%;
+        height: 40vh;
+
+
+
+
+    }
+
+    @include response-website(tab-port) {
+        grid-template-columns: repeat(2, 45%);
+        height: 40vh;
+
+
+
+    }
+
+    @include response-website(tab-land) {
+                height: 40vh;
+
+    }
+
+    
+
+}
+

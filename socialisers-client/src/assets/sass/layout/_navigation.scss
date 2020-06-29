@@ -1,0 +1,155 @@
+.navigation{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+    padding: 1.5rem;
+    color: $color-primary-dark;
+
+    @include response-website(phone) {
+        padding-left: 0
+
+
+    }
+
+    @include response-website(tab-port) {
+        padding-left: 0;
+
+
+    }
+
+    &__list{
+        flex: 1 1 80%;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        
+
+    }
+
+    &__item{
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        margin-right: 5rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary
+        }
+
+
+        @include response-website(phone) {
+            font-size: 1.3rem;
+            margin-right: 2rem;
+
+
+        }
+        @include response-website(tab-port){
+            font-size: 1.3rem;
+
+            
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-family: 'Righteous', cursive;
+
+
+        &:visited,&:link{
+            color: $color-primary-dark;
+
+           
+        
+        &:hover{
+            color: $color-primary
+        }
+        
+    }
+    }
+}
+
+.logo-box{
+    flex: 1 1 20%;
+    align-items: center;
+    display: flex;
+
+    .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .app-name{
+        font-size: 2.5rem;
+        position: fixed;
+        z-index: 20;
+        margin-left: 2rem;
+        font-family: 'Righteous', cursive;
+        text-transform: uppercase;
+
+        @include response-website(phone) {
+            font-size: 1.3rem;
+            margin-left: .5rem;
+
+
+        }
+        @include response-website(tab-port) { 
+            font-size: 2.2rem;
+            margin-left: .5rem;
+
+        }
+        
+        @include response-website(tab-land) { 
+        }
+        
+    }
+}
+
+.left-nav{
+    background-color: $color-primary-light;
+    width: 20vw;
+    padding-top: $navigation-height;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+
+    }
+
+    &__item{
+        width: 100%;
+
+        
+    }
+
+    &__link{
+        &,
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            font-size: 2.2rem;
+            align-self: center;
+            font-weight: bolder;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        &:hover{
+            background-color: rgba($color: #000000, $alpha: 0.3);
+
+        }
+    }
+}
+
+.active{
+    background-color: $color-primary-dark;
+}

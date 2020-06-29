@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+    @include response-website(phone) {
+      font-size: 50%;
+    }
+    @include response-website(tab-port) { 
+        font-size: 56%;
+    }
+    @include response-website(tab-land) { 
+        font-size: 45%;
+    }
+    @include response-website(big-desktop) {
+        font-size: 75%;
+    }
+
+}
