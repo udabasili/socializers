@@ -11,11 +11,9 @@ const path = require('path');
 
 /**SECURITY MIDDLEWARE */
 let allowedOrigins = [
-    "https://snagged-client.herokuapp.com", 
+    "https://socializers-app.herokuapp.com", 
     "http://localhost:8081/",
     "http://localhost:3000/api",
-    "http://localhost:3000/api",
-    "http://localhost:5600/api"
 ]
 
     app.use(cors({
@@ -51,7 +49,6 @@ let allowedOrigins = [
 
 /**STATIC FILES */  
     if (process.env.NODE_ENV === 'production') {
-        app.use(express.static(__dirname));
         app.use(express.static(path.join(__dirname,'../socialisers-client/build')))
         app.get('/*', (req, res)=>{
             res.sendFile(path.join(__dirname, '../socialisers-client/build/index.html'))
