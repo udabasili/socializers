@@ -5,6 +5,10 @@
   "main": "server.js",
   "author": "udendu abasili",
   "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=8.10.0"
+  },
   "scripts": {
     "start": "nodemon index.js",
     "client": "cd socialisers-client && yarn start",
