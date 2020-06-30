@@ -15,7 +15,6 @@ const { User } = require('../../models');
 const confirmAuthentication = async (req, res, next) =>{
     try {
         let token = (req.headers['authorization']).split(' ')[1];
-        console.log(token)
         if (!token) {
             return next({
                 status:401,
@@ -106,8 +105,10 @@ const protectedRoute = function(req, res, next){
  */
 
 const setCurrentUser  = function(req, res, next){
+    console.log(req.headers)
     try {
         let token = req.headers['authorization'].split(' ')[1];
+        console.log(token)
         if (!token) {
             return next({
                 status:401,

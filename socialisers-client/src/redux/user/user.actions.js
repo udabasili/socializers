@@ -17,7 +17,7 @@ const setNews = (news) => ({
     payload: news
 })
 
-const setUsers = (users) => ({
+export const setUsers = (users) => ({
     type: UserActionTypes.SET_USERS,
     payload: users
 })
@@ -58,11 +58,12 @@ export const Register = (data) => {
         return new Promise((res, rej) =>{
             return apiCall("post",`/api/auth/register`,data)
                 .then((response) =>{
+                    setAuthorizationToken(response.token)
                     dispatch(removeError())
-                     dispatch(setCurrentUser(response.user));
-                     localStorage.setItem("userId", response.user._id);
-                     localStorage.setItem("validator", response.token);
-                     return res(response.user._id);
+                    dispatch(setCurrentUser(response.user))
+                    localStorage.setItem("userId", response.user._id);
+                    localStorage.setItem("validator", response.token)
+                     return res(response.user);
                 })
                 .catch((error) =>{                    
                     dispatch(addError(error.message))
@@ -80,9 +81,9 @@ export const Login = (data) => {
                     setAuthorizationToken(response.token)
                     dispatch(removeError())
                     dispatch(setCurrentUser(response.user))
+                    console.log(response)
                     localStorage.setItem("userId", response.user._id);
                     localStorage.setItem("validator", response.token)
-                    console.log(response.token)
                     return res(response.user.username)
                 })
                 .catch((error) =>{                                        
@@ -180,10 +181,10 @@ export const addUserInterest = (userData, userId) =>{
     }
 } 
 
-export const getLocation = (coords) =>{
+export const getLocation = (coords, userId) =>{
     return dispatch =>{
     return new Promise((resolve, reject) =>{
-        return apiCall("post", `/api/get-current-location`, coords)
+        return apiCall("post", `/api/${userId}/get-current-location`, coords)
             .then((result) => {                
                 dispatch(removeError())
                 resolve(result)                
@@ -198,8 +199,6 @@ export const getLocation = (coords) =>{
 }
 
 export function verifyUser() {
-    let token = localStorage.validator;
-    setAuthorizationToken(token)
     return dispatch => {
         return new Promise((resolve, reject) => {
             return apiCall('get', '/authenticate-user')

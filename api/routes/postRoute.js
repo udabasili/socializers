@@ -131,7 +131,10 @@ router.post("/posts/:postId/like", async function (req, res, next) {
 	})
 	io.getIo().emit('notification', {
 	  postId: req.params.postId,
-	  notification: `${req.body.likedBy} liked on a post `,
+	  notification: {
+	  	postId: req.params.postId,
+	  	text: `${req.body.likedBy} liked on a post `
+	  }
 	})
 	return res.status(200).json({
 	  status: 200,

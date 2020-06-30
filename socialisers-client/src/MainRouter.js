@@ -38,7 +38,7 @@ function MainRouter(props) {
 				    console.log("Initialization failed with error:", error);
 			});
 
-	},[getUsers, currentUser.username])
+	},[currentUser.username])
 	return (
 			<React.Fragment>
 				<Switch>

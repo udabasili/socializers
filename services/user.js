@@ -67,10 +67,43 @@ class UserService {
          
     }
 
+    /**
+     * Adds user's additional info to the database
+     * @param {String} userId 
+     * @param {Object} userData 
+     * @returns {Object} user
+     */
+    static async addUserInfo(userId, userData) {
+        try {
+            userId = mongoose.Types.ObjectId(userId);
+            let user = await Models.User.findById(userId);
+            if (user) {
+                user.gender = userData.gender;
+                user.city = userData.city;
+                user.country = userData.country;
+                user.dateOfBirth = new Date(userData.birth);
+                user.occupation = userData.occupation;
+                user.ethnicity = userData.ethnicity;
+                user = await user.save();
+                return user
+            } else {
+                throw new Error("user id not in database")
+            }
+
+
+        } catch (error) {
+            console.log(error);
+
+            return next({
+                status: 400,
+                message: error.message
+            })
+        }
+    }
     
     
     /**
-     * Adds user's additional info to the database
+     * Edit user's additional info to the database
      * @param {String} userId 
      * @param {Object} userData 
      * @returns {Object} user
@@ -87,8 +120,11 @@ class UserService {
                 occupation : userData.occupation,
                 ethnicity : userData.ethnicity,
             },{new: true});
-            
-            return userRecord
+            const users = await Models.User.find().select({
+                email: 0,
+                password: 0
+            })
+            return {userRecord, users}
 
 
         } catch (error) {
@@ -115,7 +151,12 @@ class UserService {
             user.interests.hobbies = userData.marital;
             user.interests.musicGenre = user.musicGenre;
             user = await user.save();
-            return user;      
+            const users = await Models.User.find().select({
+                email: 0,
+                password: 0
+            })
+            return {user, users};      
+
         } else {
            throw new Error("user id not in database") 
         } 

@@ -132,7 +132,7 @@ function Post({post, currentUser, addCommentToPost, addLikeToPost, editPostHandl
               <div className="user-icon">
                 <div className="user-icon__photo-border">
                   <img
-                    src={user.userImages[0] ? user.userImages[0] : noImage}
+                    src={currentUser.userImages[0] ? currentUser.userImages[0] : noImage}
                     alt="your profile"
                     className="user-icon__photo"
                   />

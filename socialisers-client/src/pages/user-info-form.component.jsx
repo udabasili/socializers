@@ -58,7 +58,7 @@ class UserInfoForm extends Component {
                     let lat = position.coords.latitude
                     let long = position.coords.longitude
                     let coords = { lat, long }
-                    this.props.getLocation(coords)
+                    this.props.getLocation(coords, this.state.userId)
                         .then((res) => {
                             this.setState((prevState) => ({
                                 ...prevState,
@@ -191,7 +191,7 @@ class UserInfoForm extends Component {
 
 
 const mapDispatchToProps = (dispatch) => ({
-    getLocation: (coords) => dispatch(getLocation(coords)),
+    getLocation: (coords, userId) => dispatch(getLocation(coords, userId)),
     addUserInformation: (userInfo, userId) => dispatch(addUserInfo(userInfo, userId)),
     editUserInformation: (userInfo, userId) => dispatch(editUserInfo(userInfo, userId))
 

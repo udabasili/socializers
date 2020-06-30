@@ -8,6 +8,7 @@ class Profile extends Component {
     render() {
         const {userId} = this.props.match.params
         const user = this.props.users.find((user) => user._id === userId)
+        console.log(userId, user)
         return (
             (user !== undefined && userId) ?
                 <div className='profile'>

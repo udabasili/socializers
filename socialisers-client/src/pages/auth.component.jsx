@@ -6,6 +6,7 @@ import {connect} from "react-redux";
 import validator from '../components/validator';
 import { Register, Login } from '../redux/user/user.actions';
 import { removeError } from '../redux/error/error.actions';
+import CCManager from '../services/cometChat';
 
 
 class Auth extends Component {
@@ -138,8 +139,18 @@ class Auth extends Component {
         case "register":
           this.props.Register(userData)
             .then((response) =>{
-              let currentUserId = response
-              this.props.history.push(`/user-info/${currentUserId}/add`);
+              let currentUserId = response._id;
+                this.props.history.push(
+                  `/user-info/${currentUserId}/add`
+                );
+
+              CCManager.createUser(response.username, response.name)
+              .then((result) => {
+                console.log(currentUserId)
+              }).catch((err) => {
+                
+              });
+              
               
         })
           break;

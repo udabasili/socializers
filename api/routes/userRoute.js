@@ -6,6 +6,7 @@ const router = express.Router({mergeParams: true});
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
 const { User } = require("../../models");
 const cloudinary = require ('cloudinary').v2;
+const io = require("../../loaders/socketIo")
 const config = require('../../config');
 const fetch = require("node-fetch");
 
@@ -122,7 +123,11 @@ router.get("/add-friend/:addedFriend",
 
 router.put("/user-info/edit", async (req, res, next) => {
 	try {
-		const user = await services.UserService.editUserInfo(req.params.userId, req.body)
+		const {user, users} = await services.UserService.editUserInfo(req.params.userId, req.body)
+		io.getIo().emit('users', {
+			action: 'updatedUsers',
+			updatedUsers: users
+		})
 		return res.status(200).json({
 		status: 200,
 		message: {
@@ -139,7 +144,11 @@ router.put("/user-info/edit", async (req, res, next) => {
 
 router.post("/user-interests/add", async (req, res, next) => {
   try {
-	const user = await services.UserService.addUserInterest(req.params.userId, req.body)
+	const {user, users} = await services.UserService.addUserInterest(req.params.userId, req.body)
+	io.getIo().emit('users', {
+		action: 'updatedUsers',
+		updatedUsers: users
+	})
 	return res.status(200).json({
 		status: 200,
 		message:{
