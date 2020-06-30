@@ -17,9 +17,14 @@ class Feed extends Component {
   };
 
   componentDidMount() {
-    
+    let url;
+      if (process.env.NODE_ENV === "production") {
+        url = "https://socializers-app.herokuapp.com/";
+      } else {
+        url = "http://localhost:8081";
+      }
 
-    this.socket = openSocket("http://localhost:8081");
+    this.socket = openSocket();
     this.socket.on("posts", (data) => {
       if (data.action === "updatedPosts") {
         this.props.loadPosts(data.updatedPost);
