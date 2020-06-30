@@ -25,7 +25,7 @@ class Feed extends Component {
         url = "http://localhost:8081";
       }
 
-    CCManager.login(currentUser.username).then(
+    CCManager.login(this.props.currentUser.username).then(
       (user) => {
         CCManager.getLoggedinUser()
           .then((result) => console.log(result))
