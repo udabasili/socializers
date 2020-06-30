@@ -18,13 +18,7 @@ function MainRouter(props) {
 	const{ getUsers } = props
 	React.useEffect(() => {
 		getUsers()
-		CCManager.init()
-			.then((result) => {
-		
-
-			}).catch((error) => {
-				    console.log("Initialization failed with error:", error);
-			});
+	
 
 	},[currentUser.username])
 	return (

@@ -10,6 +10,7 @@ export default class CCManager {
     static LISTENER_KEY_GROUP = process.env.REACT_APP_COMET_GUID;
     
     static init() {
+        console.log(process.env)
         return CometChat.init(CCManager.appId, appSetting);
     }
 
