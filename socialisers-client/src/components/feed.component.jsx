@@ -24,7 +24,7 @@ class Feed extends Component {
         url = "http://localhost:8081";
       }
 
-    this.socket = openSocket();
+    this.socket = openSocket(url);
     this.socket.on("posts", (data) => {
       if (data.action === "updatedPosts") {
         this.props.loadPosts(data.updatedPost);
