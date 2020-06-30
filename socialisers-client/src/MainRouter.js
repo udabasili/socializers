@@ -20,19 +20,7 @@ function MainRouter(props) {
 		getUsers()
 		CCManager.init()
 			.then((result) => {
-		CCManager.login(currentUser.username).then(
-			user => {
-				        CCManager.getLoggedinUser().then((result) => console.log(result)).catch((error) => console.log(error))
-				console.log("Login Successful:", {
-					user
-				});
-			},
-			error => {
-				console.log("Login failed with exception:", {
-					error
-				});
-			}
-		)		;
+		
 
 			}).catch((error) => {
 				    console.log("Initialization failed with error:", error);

@@ -7,6 +7,7 @@ import Modal from './modal.component';
 import openSocket from 'socket.io-client';
 import PostForm from './post-form.component';
 import { addNotification, getNews, setUsers } from '../redux/user/user.actions';
+import CCManager from '../services/cometChat';
 
 
 class Feed extends Component {
@@ -23,6 +24,22 @@ class Feed extends Component {
       } else {
         url = "http://localhost:8081";
       }
+
+    CCManager.login(currentUser.username).then(
+      (user) => {
+        CCManager.getLoggedinUser()
+          .then((result) => console.log(result))
+          .catch((error) => console.log(error));
+        console.log("Login Successful:", {
+          user,
+        });
+      },
+      (error) => {
+        console.log("Login failed with exception:", {
+          error,
+        });
+      }
+    )
 
     this.socket = openSocket(url);
     this.socket.on("posts", (data) => {
