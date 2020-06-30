@@ -23,10 +23,10 @@ function Navigation({currentUser,
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
     const [showModal, setShowModal] = useState(false)
     const logOutHandler = () => {
+      logOut();
       CCManager.logOut()
         .then((result) => {
           console.log('log out successfully')
-          logOut()
 
         }).catch((err) => {
           console.log(err)

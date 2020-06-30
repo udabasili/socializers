@@ -3617,3 +3617,24 @@ Tue, 30 Jun 2020 14:45:10 GMT | INFO | loggers.log | Current User is permitted a
 Tue, 30 Jun 2020 14:45:10 GMT | INFO | loggers.log | User user communicated with the server | 
 Tue, 30 Jun 2020 14:45:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
 Tue, 30 Jun 2020 14:45:49 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 16:32:25 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 30 Jun 2020 16:32:25 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 30 Jun 2020 16:32:27 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 16:32:29 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 16:32:29 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 16:32:30 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 16:32:30 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 16:33:58 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 16:36:23 GMT | ERROR | loggers.log | ERROR! User doesn't exit. Please Register | 
+Tue, 30 Jun 2020 16:36:44 GMT | INFO | loggers.log | user has logged in | 
+Tue, 30 Jun 2020 16:36:44 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | User user communicated with the server | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | User user communicated with the server | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | User user communicated with the server | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | User user communicated with the server | 
+Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 16:36:51 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 16:45:35 GMT | ERROR | loggers.log | unAuthorized User | 
