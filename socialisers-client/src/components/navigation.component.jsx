@@ -75,7 +75,7 @@ function Navigation({currentUser,
             <div  className="navigation__link" onClick={() => setShowModal(true)}>
               {isMobile ?
                 <FontAwesomeIcon icon={faSearch} size='2x' /> :
-                'Search'
+                'All Users'
               }
             </div>
           </li>
