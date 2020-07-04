@@ -42,7 +42,7 @@ class SearchUsers extends Component {
                   </Link>
                 </div>
                 {(currentUser.username !== user.username &&
-                  currentUser.friends.map(
+                  currentUser.friends.filter(
                     (friend) => friend.username === user.username
                   ).length === 0) && (
                     <div

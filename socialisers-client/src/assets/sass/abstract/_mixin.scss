@@ -28,4 +28,8 @@
 @mixin defaultPadding {
     padding-top: $navigation-height;
     margin-left: 20vw;
+
+    @include response-website(phone) {
+        margin-left: 5vw;
+    }
 }

@@ -19,6 +19,17 @@
         align-items: center;
         width: 70%;
         position: relative;
+
+        @include response-website(phone) {
+            width: 85%;
+
+
+        }
+
+        @include response-website(tab-port) {
+
+
+        }
     }
 
     &__group{

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import {connect} from "react-redux";
 import { logOut, messengerButton, notificationButton, clearNotifications } from '../redux/user/user.actions';
 import NavIcon from './nav-icon.component';
-import { faComment, faSignOutAlt, faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
+import { faComment, faSignOutAlt, faSearch, faBell, faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from './modal.component';
 import SearchUsers from './search-users.component';
@@ -60,35 +60,47 @@ function Navigation({currentUser,
     
     return (
       <nav className="navigation">
-        {showModal && <Modal >
-          <SearchUsers 
-            setShowModal={setShowModal}
-            showModal={showModal}
-            currentUser={currentUser.currentUser}/>
-           </Modal>}
+        {showModal && (
+          <Modal>
+            <SearchUsers
+              setShowModal={setShowModal}
+              showModal={showModal}
+              currentUser={currentUser.currentUser}
+            />
+          </Modal>
+        )}
         <div className="logo-box">
           <div className="app-name">Socialisers</div>
         </div>
-        
         <ul className="navigation__list">
-          <li className="navigation__item">
-            <div  className="navigation__link" onClick={() => setShowModal(true)}>
-              {isMobile ?
-                <FontAwesomeIcon icon={faSearch} size='2x' /> :
-                'All Users'
-              }
-            </div>
-          </li>
           {isAuthenticated && (
             <React.Fragment>
               <li className="navigation__item">
-                <div className="navigation__link" onClick={() => {notificationDropdown()}}>
-                  <NavIcon icon={faBell} notifications={notifications}/>
+                <div
+                  className="navigation__link"
+                  onClick={() => setShowModal(true)}
+                >
+                  {isMobile ? (
+                    <FontAwesomeIcon icon={faSearch} size="2x" />
+                  ) : (
+                    "Users"
+                  )}
+                </div>
+              </li>
+              
+              <li className="navigation__item">
+                <div
+                  className="navigation__link"
+                  onClick={() => {
+                    notificationDropdown();
+                  }}
+                >
+                  <NavIcon icon={faBell} notifications={notifications} />
                 </div>
               </li>
               <li className="navigation__item">
                 <div className="navigation__link" onClick={messengerPopUp}>
-                  <NavIcon icon={faComment}  />
+                  <NavIcon icon={faComment} />
                 </div>
               </li>
             </React.Fragment>
@@ -96,26 +108,32 @@ function Navigation({currentUser,
           {!isAuthenticated ? (
             <React.Fragment>
               <li className="navigation__item">
-                <NavLink to="/auth/login" className="navigation__link" activeClassName={null}>
+                <NavLink
+                  to="/auth/login"
+                  className="navigation__link"
+                  activeClassName={null}
+                >
                   Login
                 </NavLink>
               </li>
               <li className="navigation__item">
-                <NavLink to="/auth/register" className="navigation__link" activeClassName={null}>
+                <NavLink
+                  to="/auth/register"
+                  className="navigation__link"
+                  activeClassName={null}
+                >
                   Register
                 </NavLink>
               </li>
             </React.Fragment>
           ) : (
             <li className="navigation__item">
-              <div
-                onClick={logOutHandler}
-                className="navigation__link"
-              >
-                  {isMobile ?
-                    <FontAwesomeIcon icon={faSignOutAlt} size='2x' /> :
-                    'LogOut'
-                  }
+              <div onClick={logOutHandler} className="navigation__link">
+                {isMobile ? (
+                  <FontAwesomeIcon icon={faSignOutAlt} size="2x" />
+                ) : (
+                  "LogOut"
+                )}
               </div>
             </li>
           )}

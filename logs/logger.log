@@ -3638,3 +3638,426 @@ Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | User user communicated with
 Tue, 30 Jun 2020 16:36:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
 Tue, 30 Jun 2020 16:36:51 GMT | ERROR | loggers.log | unAuthorized User | 
 Tue, 30 Jun 2020 16:45:35 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:25:56 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 30 Jun 2020 21:25:56 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 30 Jun 2020 21:27:26 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:27:51 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:28:15 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:39 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:39 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:54 GMT | INFO | loggers.log | User test1 added images to users's database  | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:28:58 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:29:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:29:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:29:45 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:31:30 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:32:21 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:32:54 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:26 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:44 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:55 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:33:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:33:56 GMT | INFO | loggers.log | User test added images to users's database  | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:08 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:20 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:20 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:34:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:40:13 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:41:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | User test communicated with the server | 
+Tue, 30 Jun 2020 21:41:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:41:31 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | test1 has logged in | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:46:02 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:50:35 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 30 Jun 2020 21:50:35 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 30 Jun 2020 21:50:35 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:50:35 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:50:36 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | test1 has logged in | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:50:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:34 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 30 Jun 2020 21:57:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 09:58:46 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Sat, 04 Jul 2020 09:58:46 GMT | INFO | loggers.log | Connected to mongodb | 
+Sat, 04 Jul 2020 10:00:43 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 04 Jul 2020 10:00:43 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | test1 has logged in | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:01:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:02:29 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:03:12 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:03:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:07:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:08:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:13:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:14:48 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:16:03 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:16:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:19:18 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:19:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:18 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:24:56 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:24:56 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:35 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:26:35 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:26:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:28:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:29:45 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:29:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:30:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:31:45 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:32:56 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:32:56 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:32:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:34:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:37:09 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:37:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:38:06 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:38:06 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:38:06 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:41:51 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:42:10 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:49:03 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:49:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:49:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:51:53 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:51:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:51:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 04 Jul 2020 10:52:17 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 04 Jul 2020 10:52:17 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Sat, 04 Jul 2020 10:52:17 GMT | INFO | loggers.log | Current User is permitted access to this route | 

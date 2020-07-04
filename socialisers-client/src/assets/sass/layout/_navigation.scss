@@ -7,7 +7,9 @@
     color: $color-primary-dark;
 
     @include response-website(phone) {
-        padding-left: 0
+        padding-left: 0;
+        z-index: 30;
+        position: relative;
 
 
     }
@@ -24,7 +26,12 @@
         align-items: center;
         display: flex;
         justify-content: flex-end;
+        position: relative;
         
+        .mobile-nav{
+            left: 2%;
+            position: absolute;
+        }
 
     }
 
@@ -82,15 +89,14 @@
 
     .app-name{
         font-size: 2.5rem;
-        position: fixed;
+        position: absolute;
         z-index: 20;
         margin-left: 2rem;
         font-family: 'Righteous', cursive;
         text-transform: uppercase;
 
         @include response-website(phone) {
-            font-size: 1.3rem;
-            margin-left: .5rem;
+            display: none;
 
 
         }
@@ -113,6 +119,14 @@
     position: fixed;
     top: 0;
     height: 100vh;
+
+    @include response-website(phone) {
+        width: 5vw;
+    }
+
+    .close-button{
+        left: 70%;
+    }
 
     &__list{
         display: flex;

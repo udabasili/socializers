@@ -9,6 +9,11 @@
     row-gap: 10%;
     column-gap: 2%;
 
+    @include response-website(phone) {
+        width: 90vw;
+        height: 40vh;
+    }
+
 
 
 }
