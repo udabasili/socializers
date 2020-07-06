@@ -29,15 +29,29 @@ export default class CCManager {
         );
     }
 
-    static getMessages(){
-        var conversationsRequest = new CometChat.ConversationsRequestBuilder()
+    static userList(){
+        const usersRequest =  new CometChat.UsersRequestBuilder()
             .setLimit(50)
-            .setConversationType('user')
+            .build();
+        usersRequest.fetchNext().then(
+            userList => {
+                console.log('User list received:', userList);
+              
+            },
+            error => {
+                console.log('User list fetching failed with error:', error);
+            }
+        );
+    }
+    static getMessages(selectedFriend){
+        console.log(selectedFriend)
+        let messagesRequest = new CometChat.MessagesRequestBuilder()
+            .setUID(selectedFriend)
+            .setLimit(30)
             .build();
 
-        return conversationsRequest.fetchNext().then(
+        return messagesRequest.fetchPrevious().then(
             conversationList => {
-                console.log(conversationList)
                 return conversationList
             },
             error => {

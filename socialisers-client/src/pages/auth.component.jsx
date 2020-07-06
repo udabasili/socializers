@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faKey, faEnvelope, faUserTag } from '@fortawesome/free-solid-svg-icons';
 import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
@@ -7,6 +6,7 @@ import validator from '../components/validator';
 import { Register, Login } from '../redux/user/user.actions';
 import { removeError } from '../redux/error/error.actions';
 import CCManager from '../services/cometChat';
+import FormComponent from '../components/form-component';
 
 
 class Auth extends Component {
@@ -66,6 +66,7 @@ class Auth extends Component {
     }
 
     componentDidUpdate(prevProps){
+      console.log(this.props.auth)
       if(this.props.auth !== prevProps.auth){
         this.setState((prevState) =>({
           ...prevState,
@@ -146,7 +147,6 @@ class Auth extends Component {
 
               CCManager.createUser(response.username, response.name)
               .then((result) => {
-                console.log(currentUserId)
               }).catch((err) => {
                 
               });
@@ -180,167 +180,123 @@ class Auth extends Component {
 
     changeAuthState = (value)=>{
       this.setState({auth:value})
-      // this.props.removeError()
     }
 
-  render() {
-    const { error,history, removeError } = this.props;
-    const{auth, registerData, loginData } = this.state;
-    history.listen(() =>{
-       removeError()
-    })
+	render() {
+		const { error,history, removeError } = this.props;
+		const{auth, registerData, loginData } = this.state;
+		history.listen(() =>{
+		removeError()
+		})
 
-    return (
-      <div className="auth">
-      <section className="auth__left-section"></section>
-      <section className="auth__right-section">
-        <div className="alert-error">{
-            error.error === "Email doesn't exist. Please Register" ? 
-            <div>
-            <span>Email doesn't exist. Please </span>
-            <span 
-              className="switch-auth" 
-              style={{color:"blue", cursor:"pointer"}} 
-              onClick={()=>this.changeAuthState("register")}> Register </span>
-            </div>
-            :
-            error.error
-        }
-        </div>
-        <form className="form" onSubmit={this.onSubmitHandler} >
-          {(auth === "register") ?
-            <React.Fragment>
-              <div className="form__component">
-                <i className="form__group__icon"><FontAwesomeIcon icon={faUserTag}/></i>
-                <div className="form__group">
-                  <input 
-                    type="text" 
-                    name="name" 
-                    placeholder="Name"
-                    onChange={this.onChangeHandlerRegister} 
-                    value={registerData.name.value}
-                    className="form__input" required/>
-                </div>
-              </div>
-              <div className="form__component">
-                <i className="form__group__icon"><FontAwesomeIcon icon={faUser}/></i>
-                <div className="form__group">
-                  <input 
-                    type="text" 
-                    name="username" 
-                    placeholder="Username"
-                    onChange={this.onChangeHandlerRegister} 
-                    value={registerData.username.value}
-                    className="form__input" required/>
-                </div>
-              </div>
-              <div className="form__component">
-                <i className="form__group__icon">
-                  <FontAwesomeIcon icon={faEnvelope}/>
-                </i>
-                <div className="form__group">
-                  <input 
-                    type="email"  
-                    onBlur={(e) => this.onBlurHandler(e)}
-                    placeholder="Email"
-                    onChange={this.onChangeHandlerRegister}
-                    value={registerData.email.value}
-                    style={{color : registerData.email.validated ? "black" : "red"}}
-                      name="email" 
-                      className="form__input" required/>
-                  {(!registerData.email.validated && registerData.email.focused ) && 
-                  <div className="validation-error">Email must be valid</div>
-                  }
-                  </div>
-                  
-                  </div>
+		return (
+		<div className="auth">
+		<section className="auth__left-section"></section>
+		<section className="auth__right-section">
+			<div className="alert-error">{
+				error.error === "Email doesn't exist. Please Register" ? 
+				<div>
+				<span>Email doesn't exist. Please </span>
+				<span 
+				className="switch-auth" 
+				style={{color:"blue", cursor:"pointer"}} 
+				onClick={()=>this.changeAuthState("register")}> Register </span>
+				</div>
+				:
+				error.error
+			}
+			</div>
+			<form className="form" onSubmit={this.onSubmitHandler} >
+			{(auth === "register") ?
+				<React.Fragment>
+				<FormComponent
+					name='name'
+					onChangeHandler={this.onChangeHandlerRegister}
+					labelIcon={faUserTag}
+					label='name'
+					value={registerData.name.value}
+				/>
+				<FormComponent
+					name='username'
+					onChangeHandler={this.onChangeHandlerRegister}
+					labelIcon={faUser}
+					label='username'
+					value={registerData.username.value}
+				/>
+				<FormComponent
+					name='email'
+					onChangeHandler={this.onChangeHandlerRegister}
+					labelIcon={faEnvelope}
+					type='email'
+					validated={registerData.email.validated}
+					error='Email must be valid'
+					label='email'
+					focused={registerData.email.focused}
+					onBlurredHandler={this.onBlurHandler}
+					value={registerData.email.value}
+				/>
+					<FormComponent
+					name='password'
+					validated={registerData.password.validated}
+					onChangeHandler={this.onChangeHandlerRegister}
+					labelIcon={faKey}
+					type='password'
+					error='Password must be at least 7 characters'
+					label='Password (Must be at least 7 Characters)'
+					focused={registerData.password.focused}
+					onBlurredHandler={this.onBlurHandler}
+					value={registerData.password.value}
+					/>
+					<FormComponent
+					name='confirmPassword'
+					validated={registerData.confirmPassword.validated}
+					onChangeHandler={this.onChangeHandlerRegister}
+					labelIcon={faKey}
+					type='password'
+					error="Your passwords don't match"
+					label='Confirm Password'
+					focused={registerData.confirmPassword.focused}
+					onBlurredHandler={this.onBlurHandler}
+					value={registerData.confirmPassword.value}
+					/>
+				
+				
+			</React.Fragment> :
+			<React.Fragment>
+					<FormComponent
+					name='email'
+					onChangeHandler={this.onChangeHandlerLogin}
+					labelIcon={faEnvelope}
+					type='email'
+					label='email'
+					value={loginData.email}
+					/>
+					<FormComponent
+					name='password'
+					validated={loginData.password}
+					onChangeHandler={this.onChangeHandlerLogin}
+					labelIcon={faKey}
+					type='password'
+					label='password'
+					value={loginData.password}
+					/>
+			</React.Fragment>
+			}
+			<input type="submit" className="submit-button" value="Submit"/>
+		</form>
+		{(auth === "register") ?
+			<div className="register-form-option">
+			<span>Registered Already? </span>
+			<span className="switch-auth" onClick={() => this.changeAuthState("login")}>Login</span>
+			</div> :
+			<div className="login-form-option">
+			</div>
 
-              <div className="form__component">
-                  <i className="form__group__icon"><FontAwesomeIcon icon={faKey}/></i>
-                  <div className="form__group">
-                      <input 
-                      type="password" 
-                      name="password" 
-                      onBlur={(e) => this.onBlurHandler(e)}
-                      placeholder="Password at least 7 characters)"
-                      onChange={this.onChangeHandlerRegister}
-                      style={{color : registerData.password.validated ? "black" : "red"}}
-                      value={registerData.password.value}
-                      className="form__input" required/>
-                      {(!registerData.password.validated && registerData.password.focused ) && 
-                  <div className="validation-error">Password must be at least 7 characters</div>
-                  }
-                  </div>
-                  </div>
-                  <div className="form__component">
-                  <i className="form__group__icon">
-                      <FontAwesomeIcon icon={faKey}/>
-                  </i>
-                  <div className="form__group">
-                  <input 
-                  type="password" 
-                  name="confirmPassword" 
-                  placeholder="Confirm password"
-                  onBlur={(e) => this.onBlurHandler(e)}
-                  onChange={this.onChangeHandlerRegister}
-                  style={{color : registerData.confirmPassword.validated ? "black" : "red"}}
-                  value={registerData.confirmPassword.value}
-                  className="form__input" required/>
-                  {(!registerData.confirmPassword.validated && registerData.confirmPassword.focused ) && 
-                  <div className="validation-error">Your passwords don't match</div>
-                  }
-                  
-              </div>
-              </div>
-          </React.Fragment> :
-          <React.Fragment>
-              <div className="form__component">
-              <i className="form__group__icon">
-                  <FontAwesomeIcon icon={faEnvelope}/>
-              </i>
-              <div className="form__group">
-                  <input 
-                  type="email"  
-                  placeholder="Email"
-                  onChange={this.onChangeHandlerLogin}
-                  value={loginData.email}
-                  name="email" 
-                  className="form__input" required/>
-              </div>
-              </div>
-              <div className="form__component">
-              <i className="form__group__icon"><FontAwesomeIcon icon={faKey}/></i>
-              <div className="form__group">
-                  <input 
-                  type="password" 
-                  name="password" 
-                  placeholder="Password"
-                  onChange={this.onChangeHandlerLogin}
-                  value={loginData.password}
-                  className="form__input" required/>
-              </div>
-              </div>
-          </React.Fragment>
-          }
-        <input type="submit" className="submit-button" value="Submit"/>
-      </form>
-      {(auth === "register") ?
-        <div className="register-form-option">
-          <span>Registered Already? </span>
-          <span className="switch-auth" onClick={() => this.changeAuthState("login")}>Login</span>
-        </div> :
-        <div className="login-form-option">
-        </div>
-
-        }
-      </section>
-        
-        
-        
-      </div>
-        
-    )
-  }
+			}
+		</section>
+		</div>  
+		)
+	}
 }
 
 

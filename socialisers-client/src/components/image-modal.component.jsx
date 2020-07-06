@@ -23,19 +23,14 @@ const Modal = (props) => {
         setImageValue(img);
       }, []);
     
-      async function setImage (cropDimension) {
-          console.log(imageValue, cropDimension.width ,cropDimension.height);
-          
+      async function setImage (cropDimension) {          
         if (imageValue && cropDimension.width && cropDimension.height) {
-            
           cropImage(imageValue, cropDimension);
         }
       };
       
-      const sendImageUrl = () => {          
-          console.log(imageUrl, cardIndex);
-          
-          getImageUrl(imageUrl, imageBlob, cardIndex)
+      const sendImageUrl = () => {                    
+        getImageUrl(imageUrl, imageBlob, cardIndex)
       }
 
       
@@ -104,8 +99,6 @@ const Modal = (props) => {
                         Close
                     </p>
                 </div>
-                    
-
             </div>
         </div>
    

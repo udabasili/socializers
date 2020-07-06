@@ -33,7 +33,7 @@
         }
     }
     &__list{
-        height: 75%;
+        height: 73%;
         overflow-y: auto;
         max-width: 100%;
         padding: 0 1rem 10rem 1rem;
@@ -43,17 +43,29 @@
         box-shadow: inset 0 2rem 2rem -2rem rgba(0, 0, 0, 0.05),
         inset 0 -2rem 2rem -2rem rgba(0, 0, 0, 0.05);
 
+        .loader{
+            fill: $color-primary-light;
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            left: 45%;
+            top: 25%;
+            
+        }
+
         @include response-website(phone) {
-            height: 70%;
+            height: 76%;
         }
 
         @include response-website(tab-port) {
-            height: 80%;
+            height: 75%;
 
         }
 
         @include response-website(tab-land) {
             width: 50vw;
+            height: 77%;
+
 
         }
 

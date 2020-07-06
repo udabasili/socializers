@@ -32,12 +32,15 @@ export const clearNotifications = () => ({
 })
 
 
-export const notificationButton = () => ({
+export const notificationButton = (hideWindow) => ({
     type: UserActionTypes.NOTIFICATION_BUTTON,
+    payload: hideWindow
+
 });
 
-export const messengerButton = () => ({
+export const messengerButton = (hideWindow) => ({
     type: UserActionTypes.MESSENGER_BUTTON,
+    payload: hideWindow
 });
 
 export const getUsers = () => (dispatch, getState) => {

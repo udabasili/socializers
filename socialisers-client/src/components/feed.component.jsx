@@ -4,42 +4,36 @@ import { addPost, getPosts,loadPosts } from '../redux/post/post.actions'
 import ReactLoading from 'react-loading';
 import Post from './post.component'
 import Modal from './modal.component';
+import Snackbar from "@material-ui/core/Snackbar";
 import openSocket from 'socket.io-client';
 import PostForm from './post-form.component';
-import { addNotification, getNews, setUsers } from '../redux/user/user.actions';
+import { addNotification, getNews, setUsers, notificationButton, messengerButton } from '../redux/user/user.actions';
 import CCManager from '../services/cometChat';
-
 
 class Feed extends Component {
   state = {
     showModal: false,
     editMode: false,
+    vertical: 0,
+    horizontal: 0,
     posts: null,
+    open: false,
+    successMessage: null
   };
 
   componentDidMount() {
     let url;
-      if (process.env.NODE_ENV === "production") {
-        url = "https://socializers-app.herokuapp.com/";
-      } else {
-        url = "http://localhost:8081";
-      }
+    if (process.env.NODE_ENV === "production") {
+      url = "https://socializers-app.herokuapp.com/";
+    } else {
+      url = "http://localhost:8081";
+    }
 
     CCManager.login(this.props.currentUser.username).then(
       (user) => {
-        CCManager.getLoggedinUser()
-          .then((result) => console.log(result))
-          .catch((error) => console.log(error));
-        console.log("Login Successful:", {
-          user,
-        });
-      },
-      (error) => {
-        console.log("Login failed with exception:", {
-          error,
-        });
-      }
-    )
+		CCManager.getLoggedinUser()
+	  }
+    );
 
     this.socket = openSocket(url);
     this.socket.on("posts", (data) => {
@@ -88,18 +82,73 @@ class Feed extends Component {
     }));
   };
 
-  modalShowHandler = (value) => {
+  handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    this.setState((prevState) => ({
+      ...prevState,
+      open: false,
+    }));
+  };
+
+  showSnackHandler = (
+    vertical = null,
+    horizontal = null,
+    successMessage = null,
+    open
+  ) => {
+    this.setState((prevState) => ({
+      ...prevState,
+      vertical,
+      horizontal,
+      open,
+      successMessage,
+    }));
+  };
+
+  modalShowHandler = (
+    value,
+    vertical = null,
+    horizontal = null,
+    successMessage = null,
+    open
+  ) => {
     this.setState((prevState) => ({
       ...prevState,
       showModal: value,
+      vertical,
+      horizontal,
+      open,
+      successMessage,
     }));
   };
   render() {
-    const { showModal, editMode, currentPost, posts } = this.state;
-    const {  currentUser } = this.props;
-    console.log(posts)
+    const {
+      showModal,
+      editMode,
+      currentPost,
+      posts,
+      successMessage,
+      vertical,
+      horizontal,
+      open,
+	} = this.state;
+	
+	const { currentUser, messengerPopUp, notificationDropdown } = this.props
+	
     return (
       <section className="feed-section">
+        {open && (
+          <Snackbar
+            anchorOrigin={{ vertical, horizontal }}
+            autoHideDuration={6000}
+            open={open}
+            onClose={this.handleClose}
+            message={successMessage}
+            key={vertical + horizontal}
+          />
+        )}
         {showModal && (
           <Modal>
             <PostForm
@@ -109,7 +158,10 @@ class Feed extends Component {
             />
           </Modal>
         )}
-        <div className="post-box">
+        <div
+          className="post-box"
+          onClick={() => (notificationDropdown(true), messengerPopUp(true))}
+        >
           <textarea
             placeholder="Add Post"
             onClick={() => this.modalShowHandler(true)}
@@ -123,6 +175,7 @@ class Feed extends Component {
               <Post
                 key={index}
                 post={p}
+                showSnack={this.showSnackHandler}
                 editPostHandler={this.editPostHandler}
                 currentUser={currentUser}
               />
@@ -146,7 +199,9 @@ const mapDispatchToProps = (dispatch) => ({
     getNews: () => dispatch(getNews()),
     loadPosts: (posts) => dispatch(loadPosts(posts)),
     setUsers: (users) => dispatch(setUsers(users)),
-    addNotification: (notification) => dispatch(addNotification(notification))
+    addNotification: (notification) => dispatch(addNotification(notification)),
+    messengerPopUp: (hideWindow) => dispatch(messengerButton(hideWindow)),
+    notificationDropdown: (hideWindow) => dispatch(notificationButton(hideWindow)),
 })
  
 export default connect(mapStateToProps, mapDispatchToProps)(Feed)

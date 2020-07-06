@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    position: absolute;
     z-index: 10;
     padding: 1.5rem;
     color: $color-primary-dark;
@@ -16,6 +17,8 @@
 
     @include response-website(tab-port) {
         padding-left: 0;
+        background-color: $color-primary-dark;
+        color: white;
 
 
     }
@@ -47,7 +50,7 @@
 
 
         @include response-website(phone) {
-            font-size: 1.3rem;
+            font-size: 1rem;
             margin-right: 2rem;
 
 
@@ -96,10 +99,11 @@
         text-transform: uppercase;
 
         @include response-website(phone) {
-            display: none;
+            font-size: 1.8rem;
 
 
         }
+
         @include response-website(tab-port) { 
             font-size: 2.2rem;
             margin-left: .5rem;
@@ -121,7 +125,16 @@
     height: 100vh;
 
     @include response-website(phone) {
-        width: 5vw;
+       position: relative;
+       width: 100vw;
+       overflow: hidden;
+       height: 6vh;
+       background-color: white;
+       padding-top: 0;
+       border-top: 2px solid $color-primary-dark;
+       border-bottom: 2px solid $color-primary-dark;
+
+       
     }
 
     .close-button{
@@ -134,10 +147,19 @@
         list-style: none;
         align-items: center;
 
+        @include response-website(phone) {
+            flex-direction: row;
+            height: 100%;
+        }
+
     }
 
     &__item{
         width: 100%;
+
+        @include response-website(phone){
+            width: 25%;
+        }
 
         
     }
@@ -155,6 +177,20 @@
             font-weight: bolder;
             width: 100%;
             text-transform: uppercase;
+
+            @include response-website(phone) {
+                color: $color-primary-light;
+            }
+
+            @include response-website(tab-port) {
+                font-size: 1.5rem;
+
+            }
+
+            @include response-website(tab-land) {
+                font-size: 2rem;
+
+            }
         }
 
         &:hover{

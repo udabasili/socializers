@@ -27,12 +27,13 @@ export default function userReducer (state=INITIAL_STATE, action){
         case UserActionTypes.NOTIFICATION_BUTTON:
              return {
                  ...state,
-                 hideNotificationDropDown: !state.hideNotificationDropDown,
+                 hideNotificationDropDown: action.payload !== undefined  ? action.payload : !state.hideNotificationDropDown,
              };
         case UserActionTypes.MESSENGER_BUTTON:
+            console.log(action.payload !== undefined )
              return {
                  ...state,
-                 hideMessenger: !state.hideMessenger,
+                 hideMessenger: action.payload !== undefined ? action.payload : !state.hideMessenger,
              };
         
         case UserActionTypes.ADD_NOTIFICATION:

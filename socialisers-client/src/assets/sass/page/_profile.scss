@@ -8,32 +8,20 @@
     column-gap: 2%;
 
     @include response-website(phone) {
-        align-items: center;
-        max-width: 100%;
-        grid-template-columns: 90%;
-        grid-template-rows: 60% 200%;
-        row-gap: 1px;
-
+        grid-template-columns: 40% 50%;
+        height: 70vh;
 
 
     }
 
     @include response-website(tab-port) {
-        align-items: center;
-        max-width: 80%;
-        grid-template-columns: 50%;
-        grid-template-rows: 60% 120%;
-        row-gap: 4rem;
-
+        grid-template-columns: 40% 50%;
 
     }
 
     @include response-website(tab-land) {
-        align-items: center;
-        max-width: 100%;
-        grid-template-columns: 60%;
-        grid-template-rows: 50% 90%;
-        row-gap: 3rem;
+        grid-template-columns: 30% 50%;
+
     }
 
     &__left{
@@ -71,17 +59,17 @@
         z-index: 0;
 
         @include response-website(phone){
-            width: 40%;
+            width: 90%;
             height: 40%;
         }
 
         @include response-website(tab-port) {
-             width: 50%;
+             width: 90%;
              height: 40%;
         }
 
         @include response-website(tab-land) {
-            width: 30%;
+            width: 90%;
             height: 40%;
         }
     }
@@ -112,6 +100,10 @@
 
     }
 
+    &__image{
+        max-width: 100%;
+        height: auto
+    }
     &__interests{
         padding: 2rem;
     }
@@ -122,10 +114,21 @@
     }
     &__interest-title{
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         display: block;
         padding: 1.5rem 0 0 1.5rem;
+
+         @include response-website(phone) {
+             font-size: 1.1rem;
+             font-weight: 200;
+         }
+
+         @include response-website(tab-port) {
+             font-size: .9rem;
+         }
+
+         @include response-website(tab-land) {}
 
         
     }

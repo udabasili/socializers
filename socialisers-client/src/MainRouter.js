@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import UserInfoForm from './pages/user-info-form.component';
 import UserImageUpload from './pages/user-images-upload.component';
 import ProtectedRoute from './components/protected-route.component';
-import UserPreference from './pages/user-preference.component';
 import UserInterest from './pages/user-interest.component';
 import { getUsers } from './redux/user/user.actions';
 import CCManager from './services/cometChat';
@@ -22,7 +21,7 @@ function MainRouter(props) {
 			.then((result) => {
 				CCManager.login(currentUser.username).then(
 					user => {
-								CCManager.getLoggedinUser().then((result) => console.log(result)).catch((error) => console.log(error))
+								// CCManager.getLoggedinUser().then((result) => console.log(result)).catch((error) => console.log(error))
 						console.log("Login Successful:", {
 							user
 						});
@@ -63,8 +62,6 @@ function MainRouter(props) {
 						component={UserInfoForm} />
 					<ProtectedRoute  exact path="/image-upload/:currentUserId/add" 
 						currentUser={currentUser} isAuthenticated={isAuthenticated} component={UserImageUpload}/>
-					<ProtectedRoute  exact path="/user-preference/:currentUserId/add" 
-					currentUser={currentUser} isAuthenticated={isAuthenticated} component={UserPreference}/>
 					<ProtectedRoute  exact path="/user-interests/:currentUserId/add" 
 						currentUser={currentUser} isAuthenticated={isAuthenticated} component={UserInterest}/>
 					<ProtectedRoute currentUser={currentUser} path="/" isAuthenticated={isAuthenticated} component={Home} />

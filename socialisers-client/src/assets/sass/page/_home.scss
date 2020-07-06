@@ -9,6 +9,10 @@
     flex-direction: column;
     align-items: center;
 
+    @include response-website(phone){
+        width: 100vw;
+    }
+
     .modal{
 
         .modal-content{
@@ -22,18 +26,20 @@
         border-radius: 10px;
 
         @include response-website(phone) {
-            width: 70vw;
+            width: 80%;
 
 
         }
 
         @include response-website(tab-port) {
-        width: 70vw;
-
+            width: 90%;
 
         }
 
-        @include response-website(tab-land) {}
+        @include response-website(tab-land) {
+            width: 90%;
+
+        }
 
         &__input{
             width: 95%;
@@ -43,6 +49,20 @@
             padding: 10px;
             border-radius: 1rem;
             margin: 2.8rem auto;
+
+            @include response-website(phone) {
+                padding: 5px;
+                margin: 2.4rem auto;
+
+            }
+
+            @include response-website(tab-port) {
+                width: 70vw;
+
+
+            }
+
+            @include response-website(tab-land) {}
             
         }
 
@@ -68,20 +88,20 @@
 
 .chat{
     position: fixed;
-    left: 68vw;
+    left: 57vw;
     top: 35vh;
     z-index: 20;
     display: flex;
 
     @include response-website(phone) {
-        left: 28vw;
+        left: 23vw;
         top: 38vh;
 
 
     }
 
     @include response-website(tab-port) {
-        left: 43vw;
+        left: 41vw;
 
     }
 
@@ -94,7 +114,7 @@
         background-color: $color-primary-dark;
         height: 60vh;
         position: relative;
-        width: 25vw;
+        width: 35vw;
         box-shadow:  0 8px 10px rgba(0, 0, 0, 0.116), 
             0 8px 10px rgba(0, 0, 0, 0.116);
             
@@ -109,7 +129,7 @@
             }
 
             @include response-website(tab-land) {
-                width: 50vw;
+                width: 40vw;
 
             }
 
@@ -134,11 +154,13 @@
         align-self: flex-end;
         border-radius: 50%;
         width: 4.7rem;
+        background-color: black;
         height: 4.7rem;
         border-radius: 50%;
         cursor: pointer;
         position: fixed;
         top: 90%;
+        fill: $color-primary-light;
         left: 94%;
         box-shadow: 0 8px 10px rgba(0, 0, 0, 0.116),
         0 8px 10px rgba(0, 0, 0, 0.116);

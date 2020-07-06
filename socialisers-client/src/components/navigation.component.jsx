@@ -26,10 +26,7 @@ function Navigation({currentUser,
       logOut();
       CCManager.logOut()
         .then((result) => {
-          console.log('log out successfully')
-
         }).catch((err) => {
-          console.log(err)
         });
     }
     const handleWindowSizeChange = () => {

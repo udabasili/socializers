@@ -1,19 +1,35 @@
 import React, {useState} from 'react'
-import { faBell, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTimesCircle, faComments } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ChatMessenger from './chat-messenger.component';
 import { connect } from 'react-redux'
 import { messengerButton } from '../redux/user/user.actions';
+import { useEffect } from 'react';
+import { useCallback } from 'react';
+import CCManager from "../services/cometChat";
+import { CometChat } from "@cometchat-pro/chat";
 
+function Chat({currentUser, hideMessenger, messengerButton, isMobile}) { 
 
-function Chat({currentUser, hideMessenger, messengerPopUp, isMobile}) {
+  const loadChatWindow = useCallback(() => {
+      CCManager.addMessageListener((data, error) => {
+        if (error) return console.log(`error: ${error}`);
+          setReceiver(data.sender.uid);
+          messengerButton(false)
+
+      });
+    })
+  useEffect(() => {
+    loadChatWindow()
+    
+  }, [loadChatWindow])
   
   const [receiver, setReceiver] = useState(null)
 
   const openChatWindow = (user) => {
     setReceiver(user);
-   
   };
+
   const friends = currentUser.friends
     return (
       <div className="chat">
@@ -24,7 +40,7 @@ function Chat({currentUser, hideMessenger, messengerPopUp, isMobile}) {
               color="red"
               className="close-button"
               size="2x"
-              onClick={messengerPopUp}
+              onClick={messengerButton}
             />
             <div className="chat__content">
               {receiver ? (
@@ -39,7 +55,7 @@ function Chat({currentUser, hideMessenger, messengerPopUp, isMobile}) {
                   <ul className="chat__list">
                     <li
                       className="users__item"
-                      onClick={() => openChatWindow(friend)}
+                      onClick={() => openChatWindow(friend.username)}
                     >
                       <div className="users__user">
                         <div className="user-icon">
@@ -61,12 +77,12 @@ function Chat({currentUser, hideMessenger, messengerPopUp, isMobile}) {
           </div>
         )}
         {!isMobile && (
-          <div className="chat__button" onClick={messengerPopUp}>
+          <div className="chat__button" onClick={ () => messengerButton()}>
             <FontAwesomeIcon
               className="chat__icon"
               size="1x"
-              color={hideMessenger ? "blue" : "gray"}
-              icon={faBell}
+              color={hideMessenger ? "#75a1f3" : "gray"}
+              icon={faComments}
             />
           </div>
         )}
@@ -75,11 +91,10 @@ function Chat({currentUser, hideMessenger, messengerPopUp, isMobile}) {
 }
 const mapStateToProps = (state) => ({
   hideMessenger: state.user.hideMessenger,
-
 })
 
-const mapDispatchToProps = (dispatch) => ({
-  messengerPopUp: () => dispatch(messengerButton()),
-})
+const mapDispatchToProps = {
+  messengerButton
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Chat)

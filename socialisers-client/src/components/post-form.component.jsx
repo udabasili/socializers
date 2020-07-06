@@ -3,6 +3,7 @@ import { addPost, editPost } from '../redux/post/post.actions'
 import { connect } from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import Snackbar from "@material-ui/core/Snackbar";
 import { useEffect } from 'react';
 
 function PostForm({ showModalHandler, addPost, editMode, currentPost, editPost}) {
@@ -21,11 +22,24 @@ function PostForm({ showModalHandler, addPost, editMode, currentPost, editPost})
         e.preventDefault()
         if(editMode){
             editPost(post, currentPost._id)
-                .then(() => showModalHandler(false))
+                .then(() => {
+                    showModalHandler(false, 'top', 'center', "Post Successfully Edit", true )
+                    }
+                )
+                
 
         } else{
             addPost(post)
-                .then(() => showModalHandler(false))
+                .then(() => {
+                    showModalHandler(
+                      false,
+                      "top",
+                      "center",
+                      "Post Successfully Added",
+                      true
+                    );
+                }
+            )
         }
         
     }
@@ -48,7 +62,8 @@ function PostForm({ showModalHandler, addPost, editMode, currentPost, editPost})
 
 const mapDispatchToProps = {
     addPost,
-    editPost
+    editPost,
+    
 }
 
 export default connect(null, mapDispatchToProps)(PostForm)

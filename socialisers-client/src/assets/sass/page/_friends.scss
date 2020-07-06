@@ -7,9 +7,9 @@
     column-gap: 2%;
 
     @include response-website(phone) {
-        width: 95vw;
-        grid-template-columns: repeat(2, 45%);
-        column-gap: 1%;
+        width: 100vw;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
         height: 40vh;
     }
 

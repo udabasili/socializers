@@ -30,6 +30,6 @@
     margin-left: 20vw;
 
     @include response-website(phone) {
-        margin-left: 5vw;
+        margin-left: 0;
     }
 }

@@ -4,12 +4,46 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { addFriend } from '../redux/user/user.actions';
 import {  Link } from 'react-router-dom';
+import { Snackbar } from '@material-ui/core';
 
 class SearchUsers extends Component {
+	state = {
+		vertical: 0,
+		horizontal: 0,
+		message: "",
+		open: false,
+	};
 
+	addFriendHandler = (friendId, friendUsername) => {
+		const message = `${friendUsername} added as a friend`
+		this.props.addFriend(friendId)
+			.then((result) => {
+				this.setState((prevState) => ({
+					...prevState,
+					vertical: 'top',
+					horizontal: 'center',
+					open: 'true',
+					message
+				  })
+			);
+		})
+		.catch((err) => {});
+	};
+
+	handleClose = (event, reason) => {
+		if (reason === "clickaway") {
+		return;
+		}
+		this.setState((prevState) => ({
+			...prevState,
+			open: false,
+			})
+		)
+	};
   render() {
-    const users = this.props.users
-    const { currentUser, setShowModal, addFriend} = this.props
+    const users = this.props.users;
+    const { open, vertical, horizontal, message } = this.state;
+    const { currentUser, setShowModal, addFriend } = this.props;
     return (
       <div className="users">
         <FontAwesomeIcon
@@ -41,13 +75,13 @@ class SearchUsers extends Component {
                     {user.username}
                   </Link>
                 </div>
-                {(currentUser.username !== user.username &&
+                {currentUser.username !== user.username &&
                   currentUser.friends.filter(
                     (friend) => friend.username === user.username
-                  ).length === 0) && (
+                  ).length === 0 && (
                     <div
                       className="users__add-button"
-                      onClick={() => addFriend(user._id)}
+                      onClick={() => this.addFriendHandler(user._id, user.username)}
                     >
                       <FontAwesomeIcon icon={faUserPlus} />
                     </div>
@@ -57,6 +91,16 @@ class SearchUsers extends Component {
           </ul>
         ) : (
           <p>No Friends</p>
+        )}
+        {open && (
+          <Snackbar
+            anchorOrigin={{ vertical, horizontal }}
+            autoHideDuration={3000}
+            open={open}
+            onClose={this.handleClose}
+            message={message}
+            key={vertical + horizontal}
+          />
         )}
       </div>
     );
