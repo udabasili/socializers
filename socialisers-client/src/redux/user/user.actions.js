@@ -1,7 +1,6 @@
 import { UserActionTypes } from "./user.types";
 import { apiCall, setTokenHeader } from "../../services/api";
 import { addError, removeError } from "../error/error.actions";
-import CCManager from "../../services/cometChat";
 
 export function setAuthorizationToken(token) {
     return setTokenHeader(token);
@@ -38,10 +37,7 @@ export const notificationButton = (hideWindow) => ({
 
 });
 
-export const messengerButton = (hideWindow) => ({
-    type: UserActionTypes.MESSENGER_BUTTON,
-    payload: hideWindow
-});
+
 
 export const getUsers = () => (dispatch, getState) => {
     const {
@@ -84,7 +80,6 @@ export const Login = (data) => {
                     setAuthorizationToken(response.token)
                     dispatch(removeError())
                     dispatch(setCurrentUser(response.user))
-                    console.log(response)
                     localStorage.setItem("userId", response.user._id);
                     localStorage.setItem("validator", response.token)
                     return res(response.user.username)
@@ -104,13 +99,6 @@ export const logOut = () => {
         setAuthorizationToken(false)
         dispatch(setCurrentUser({}))
         localStorage.clear()
-        CCManager.logOut().then(() =>{
-            console.log("Logout completed successfully");
-        }, error => {
-            console.log("Logout failed with exception:", {
-                error
-            });
-        })
     }
 }
 
@@ -214,7 +202,6 @@ export function verifyUser() {
                     return resolve(response.currentUser.username)
                 })
                 .catch((e) => {
-                    console.log(e)
                     dispatch(addError('Please Login again'))
                     dispatch(setCurrentUser({}))
                     localStorage.clear()
@@ -251,7 +238,6 @@ export const getNews = () => (dispatch, getState) => {
     const userId = user.currentUser._id
     return apiCall("get", `/api/${userId}/world-news`)
         .then((response) => {
-            console.log(response)
             dispatch(setNews(response.articles))
     })
         .catch((error) => {

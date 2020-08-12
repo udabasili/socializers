@@ -2,7 +2,7 @@
     @include defaultPadding;
     display: grid;
     justify-content: center;
-    height: 60vh;
+    min-height: 80vh;
     grid-template-columns:  repeat(3, 30%);
     column-gap: 2%;
 

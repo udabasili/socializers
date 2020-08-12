@@ -6,8 +6,9 @@ import noImage from "../assets/images/no-image.png";
 class Profile extends Component {
  
     render() {
+        let user ;
         const {userId} = this.props.match.params
-        const user = this.props.users.find((user) => user._id === userId)
+        user = this.props.users.find((user) => user._id === userId)
 
         return (
             (user !== undefined && userId) ?
@@ -80,8 +81,4 @@ const mapStateToProps = (state) => ({
 
 })
 
-const mapDispatchToProps = {
-    
-}
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Profile))
+export default withRouter(connect(mapStateToProps, null)(Profile))

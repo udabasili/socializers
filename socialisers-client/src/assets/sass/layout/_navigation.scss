@@ -2,8 +2,10 @@
     display: flex;
     width: 100%;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    background-color: black;
     z-index: 10;
+    height: $navigation-height;
     padding: 1.5rem;
     color: $color-primary-dark;
 
@@ -39,7 +41,7 @@
     }
 
     &__item{
-        font-size: 1.9rem;
+        font-size: 3rem;
         text-transform: uppercase;
         margin-right: 5rem;
         cursor: pointer;
@@ -50,7 +52,7 @@
 
 
         @include response-website(phone) {
-            font-size: 1rem;
+            font-size: 1.3em;
             margin-right: 2rem;
 
 
@@ -67,11 +69,22 @@
         font-family: 'Righteous', cursive;
 
 
-        &:visited,&:link{
-            color: $color-primary-dark;
+        &,
+        &:link{
+            color: $color-primary-light;
+            font-size: 2rem;
 
-           
-        
+            @include response-website(phone) {
+                font-size: 1.5rem;
+                padding: 0 2rem;
+                svg{
+                    font-size: 2.4rem;
+                }
+            }
+
+            @include response-website(tab-port){
+                color: white;
+            }
         &:hover{
             color: $color-primary
         }
@@ -97,6 +110,7 @@
         margin-left: 2rem;
         font-family: 'Righteous', cursive;
         text-transform: uppercase;
+        color: $color-primary-light;
 
         @include response-website(phone) {
             font-size: 1.8rem;
@@ -106,7 +120,7 @@
 
         @include response-website(tab-port) { 
             font-size: 2.2rem;
-            margin-left: .5rem;
+            padding-left: 2rem;
 
         }
         
@@ -160,30 +174,28 @@
         @include response-website(phone){
             width: 25%;
         }
-
-        
     }
 
     &__link{
         &,
-        &:link,
-        &:visited{
+        &:link{
             text-decoration: none;
-            color: white;
+            color: black;
             display: block;
-            padding: 10px;
+            text-align: center;
             font-size: 2.2rem;
-            align-self: center;
             font-weight: bolder;
+            padding: 10px;
             width: 100%;
             text-transform: uppercase;
 
             @include response-website(phone) {
-                color: $color-primary-light;
+                color: $color-primary-dark;
             }
 
             @include response-website(tab-port) {
                 font-size: 1.5rem;
+                color: $color-primary-dark;
 
             }
 
@@ -201,5 +213,9 @@
 }
 
 .active{
-    background-color: $color-primary-dark;
+    background-color: rgb(223, 222, 222);
+
+    @include response-website(phone){
+        background-color: $color-primary-light;
+    }
 }

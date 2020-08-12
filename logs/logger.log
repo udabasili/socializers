@@ -6564,3 +6564,447 @@ Mon, 06 Jul 2020 13:38:06 GMT | INFO | loggers.log | Current User is permitted a
 Mon, 06 Jul 2020 13:38:09 GMT | INFO | loggers.log | Verified User has valid token | 
 Mon, 06 Jul 2020 13:38:12 GMT | INFO | loggers.log | User test1 communicated with the server | 
 Mon, 06 Jul 2020 13:38:12 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:37:38 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 15:37:39 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 15:45:10 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:45:10 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 15:45:10 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 15:45:11 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 15:47:16 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 15:47:33 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:47:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:50:34 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 15:50:35 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:50:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:51:46 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 15:51:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:51:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:51:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:52:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:54:24 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:54:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:54:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:54:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:54:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:54:25 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 15:54:25 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 15:56:18 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 15:56:18 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 15:56:18 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 15:56:46 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:04:27 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:06:44 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:07:44 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:08:20 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:09:58 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 16:09:58 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:09:59 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 16:11:09 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:15:19 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:19:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:19:54 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:19:54 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:39 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:39 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:39 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:39 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:24:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:24:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:27:42 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:27:42 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:27:42 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:27:42 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:27:51 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:27:51 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:27:51 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:27:51 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:30:00 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:30:00 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:30:00 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 16:30:00 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 16:54:32 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 16:54:32 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 16:54:32 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 16:54:32 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:03:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:06:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:08:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:08:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:08:07 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:08:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:13:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:14:25 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:22:05 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:22:05 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:22:05 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:22:47 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:22:47 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:22:47 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:23:13 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:23:13 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:23:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:25:21 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:25:21 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:25:21 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:26:33 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 17:26:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:26:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:30:42 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 17:30:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:30:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:30:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:30:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 17:30:43 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 17:30:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:11:26 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:11:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:14:23 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:16:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:30:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:33:11 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:33:11 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:33:11 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:33:11 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:33:30 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:33:30 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:33:30 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:33:30 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:37:55 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:37:56 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:52:20 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 19:52:20 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:52:20 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 19:52:49 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 19:52:49 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:52:49 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 19:52:49 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 19:53:44 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 19:55:10 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 19:55:10 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 19:55:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 19:55:48 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 19:56:24 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 19:56:24 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 19:56:24 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:00:00 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:00:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:02:28 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:02:28 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:02:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:04:46 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:07:15 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:07:15 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:07:15 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:12:07 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:12:07 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:12:07 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:12:07 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:15:20 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:15:20 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:15:20 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:15:31 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:16:21 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:17:10 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:17:10 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:17:10 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:17:10 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:17:21 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:17:21 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:18:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:19:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:16 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:17 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:41 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:21:42 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:22:31 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:22:31 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:22:31 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:22:31 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:22:36 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:23:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:26:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:29:33 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:29:34 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:29:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:29:45 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Wed, 12 Aug 2020 20:29:45 GMT | INFO | loggers.log | Connected to mongodb | 
+Wed, 12 Aug 2020 20:29:45 GMT | ERROR | loggers.log | unAuthorized User | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | test1 has logged in | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:29:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:30:51 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:30:51 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:30:51 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:36:14 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:36:15 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:36:15 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:51:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:54:24 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 20:57:10 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 20:57:11 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 20:57:11 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Wed, 12 Aug 2020 21:00:28 GMT | INFO | loggers.log | Verified User has valid token | 
+Wed, 12 Aug 2020 21:00:28 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Wed, 12 Aug 2020 21:00:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 

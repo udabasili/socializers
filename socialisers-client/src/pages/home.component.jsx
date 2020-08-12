@@ -6,39 +6,16 @@ import Profile from './profile.component'
 import { connect } from 'react-redux'
 import Friends from './friends.component'
 import News from './news.component'
-import Chat from '../components/chat.component'
 import NotFoundPage from '../components/not-found'
 
 class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isMobile: window.innerWidth <= 600,
-    };
-  }
 
-	handleWindowSizeChange = () => {
-		if (window.innerWidth <= 600) {
-		this.setState({ isMobile: true });
-		} else {
-		this.setState({ isMobile: false });
-		}
-	};
-
-  componentDidMount() {
-    window.addEventListener("resize", this.handleWindowSizeChange);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleWindowSizeChange);
-  }
   render() {
-	const { currentUser } = this.props;
-	const {isMobile} = this.state;
+
+	const { currentUser, isMobile } = this.props;
     return (
       <div className="home">
         <LeftNav isMobile={isMobile} />
-        <Chat currentUser={currentUser} isMobile={isMobile} />
         <Switch>
           <Route
             exact
@@ -70,8 +47,5 @@ const mapStateToProps = (state) => ({
 	currentUser:  state.user.currentUser
 })
 
-const mapDispatchToProps = {
-  
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, null)(Home)

@@ -1,6 +1,6 @@
 .world-news {
     @include defaultPadding;
-    width: 80vw;
+    width: 100vw;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -10,10 +10,25 @@
     column-gap: 2%;
 
     @include response-website(phone) {
+        grid-template-columns: repeat(2, max-content);
+        margin: 0 auto;
         width: 90vw;
-        height: 40vh;
     }
 
+    @include response-website(tab-port) {
+        width: 100vw;
+  
+        
+    }
+    .card{
+            height: 90vh;
+        @include response-website(phone) {
+            width: 45vw;
+            height: 60vh;
+
+        }
+        
+    }
 
 
 }

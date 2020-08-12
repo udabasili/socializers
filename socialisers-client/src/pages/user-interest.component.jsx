@@ -7,7 +7,6 @@ import SelectPure from "select-pure";
 import { connect } from 'react-redux';
 import { addUserInterest } from "../redux/user/user.actions";
 import { Redirect } from 'react-router-dom';
-import CCManager from "../services/cometChat";
 
 
 class UserInterest extends Component {
@@ -104,14 +103,6 @@ class UserInterest extends Component {
         const {userData, paramsId} = this.state 
         this.props.addUserInterest(userData,paramsId)
         .then((response)=> {
-            CCManager.createUser(response, response).then(
-              (user) => {
-                console.log("user created", user);
-              },
-              (error) => {
-                console.log("error", error);
-              }
-            );
             this.props.history.push("/") 
             }
         )

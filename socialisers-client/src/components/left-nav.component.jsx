@@ -1,24 +1,13 @@
 import React, { Component } from 'react'
-import { NavLink, withRouter  } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUser, faUsers, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux'
-import { messengerButton, notificationButton } from '../redux/user/user.actions';
 
 class LeftNav extends Component {
-  constructor(){
-      super();
-      this.state={
-          isMobile: window.innerWidth <= 600
-      }
-  }
-
+  
   render() {
-    const {currentUser, isMobile, notificationButton, messengerButton, history} = this.props
-    history.listen((props)=>{
-      notificationButton(true)
-      messengerButton(true)
-    })
+    const {currentUser, isMobile} = this.props
     return (
       <nav className="left-nav">
         <ul className="left-nav__list">
@@ -75,11 +64,5 @@ const mapStateToProps = (state) => ({
     currentUser: state.user.currentUser
 })
 
-const mapDispatchToProps = {
-  messengerButton,
-  notificationButton,
-};
 
-
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(LeftNav))
+export default connect(mapStateToProps, null)(LeftNav)

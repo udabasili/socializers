@@ -1,5 +1,5 @@
 import  React from 'react';
-import {Redirect, Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch, withRouter} from "react-router-dom";
 import Auth from './pages/auth.component';
 import NotFoundPage from './components/not-found';
 import Home from './pages/home.component';
@@ -8,35 +8,20 @@ import UserInfoForm from './pages/user-info-form.component';
 import UserImageUpload from './pages/user-images-upload.component';
 import ProtectedRoute from './components/protected-route.component';
 import UserInterest from './pages/user-interest.component';
-import { getUsers } from './redux/user/user.actions';
-import CCManager from './services/cometChat';
+import { getUsers, notificationButton } from './redux/user/user.actions';
+import { removeError } from './redux/error/error.actions';
 
 
 function MainRouter(props) {
+
 	const {currentUser, isAuthenticated} = props.currentUser
 	const{ getUsers } = props
 	React.useEffect(() => {
+		props.history.listen(() => {
+		props.removeError()
+		notificationButton(true)
+		})
 		getUsers()
-		CCManager.init()
-			.then((result) => {
-				CCManager.login(currentUser.username).then(
-					user => {
-								// CCManager.getLoggedinUser().then((result) => console.log(result)).catch((error) => console.log(error))
-						console.log("Login Successful:", {
-							user
-						});
-					},
-					error => {
-						console.log("Login failed with exception:", {
-							error
-						});
-					}
-				)		;
-
-			}).catch((error) => {
-				    console.log("Initialization failed with error:", error);
-			});
-
 	},[currentUser.username])
 	return (
 			<React.Fragment>
@@ -64,8 +49,11 @@ function MainRouter(props) {
 						currentUser={currentUser} isAuthenticated={isAuthenticated} component={UserImageUpload}/>
 					<ProtectedRoute  exact path="/user-interests/:currentUserId/add" 
 						currentUser={currentUser} isAuthenticated={isAuthenticated} component={UserInterest}/>
-					<ProtectedRoute currentUser={currentUser} path="/" isAuthenticated={isAuthenticated} component={Home} />
-
+					<ProtectedRoute currentUser={currentUser} 
+						path="/" 
+						isAuthenticated={isAuthenticated} 
+						isMobile={props.isMobile}
+						component={Home} />
 					<Route exact path="/404" component={NotFoundPage} />
 				</Switch>
 			</React.Fragment>
@@ -78,8 +66,9 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps =  {
-	getUsers
+	getUsers,
+	removeError,
+	notificationButton
 }
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(MainRouter);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MainRouter));

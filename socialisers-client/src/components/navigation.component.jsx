@@ -1,60 +1,35 @@
 import  React,{useState, useEffect} from 'react'
-import {ReactComponent as AppIcon} from "../assets/images/icons8-myspace-circled-100.svg";
 import { NavLink } from 'react-router-dom';
 import {connect} from "react-redux";
-import { logOut, messengerButton, notificationButton, clearNotifications } from '../redux/user/user.actions';
+import { logOut, notificationButton, clearNotifications } from '../redux/user/user.actions';
 import NavIcon from './nav-icon.component';
-import { faComment, faSignOutAlt, faSearch, faBell, faList } from '@fortawesome/free-solid-svg-icons';
+import { faSignOutAlt, faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from './modal.component';
 import SearchUsers from './search-users.component';
-import CCManager from '../services/cometChat';
 import Notification from './notification.component';
 
 
-function Navigation({currentUser, 
+function Navigation({
+	currentUser, 
     logOut, 
     notificationDropdown, 
-    messengerPopUp, 
-    hideNotificationDropDown, 
-    notifications ,
-    clearNotifications}) {
+	hideNotificationDropDown, 
+	isMobile,
+	notifications 
+	}) {
+	console.log(isMobile)
     const [isAuthenticated, setAuthentication] = useState(currentUser.isAuthenticated);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
     const [showModal, setShowModal] = useState(false)
     const logOutHandler = () => {
       logOut();
-      CCManager.logOut()
-        .then((result) => {
-        }).catch((err) => {
-        });
     }
-    const handleWindowSizeChange = () => {
-
-        if (window.innerWidth <= 600) {
-            setIsMobile(true)
-        }
-        else {
-            setIsMobile(false)
-        }        
-
-    };
+  
     useEffect(() =>{
         setAuthentication(currentUser.isAuthenticated)
         
-    },[currentUser.isAuthenticated])
-
-    useEffect(() =>{
-        window.addEventListener('resize', handleWindowSizeChange);
-        
-        return () => {
-         window.removeEventListener('resize', handleWindowSizeChange);
-
-        }
-    },[isMobile])
-
-
-    
+	},[currentUser.isAuthenticated])
+	
     return (
       <nav className="navigation">
         {showModal && (
@@ -78,7 +53,7 @@ function Navigation({currentUser,
                   onClick={() => setShowModal(true)}
                 >
                   {isMobile ? (
-                    <FontAwesomeIcon icon={faSearch} size="2x" />
+                    <FontAwesomeIcon icon={faSearch}/>
                   ) : (
                     "Users"
                   )}
@@ -93,11 +68,6 @@ function Navigation({currentUser,
                   }}
                 >
                   <NavIcon icon={faBell} notifications={notifications} />
-                </div>
-              </li>
-              <li className="navigation__item">
-                <div className="navigation__link" onClick={messengerPopUp}>
-                  <NavIcon icon={faComment} />
                 </div>
               </li>
             </React.Fragment>
@@ -127,7 +97,7 @@ function Navigation({currentUser,
             <li className="navigation__item">
               <div onClick={logOutHandler} className="navigation__link">
                 {isMobile ? (
-                  <FontAwesomeIcon icon={faSignOutAlt} size="2x" />
+                  <FontAwesomeIcon icon={faSignOutAlt} />
                 ) : (
                   "LogOut"
                 )}
@@ -143,13 +113,11 @@ function Navigation({currentUser,
 const mapStateToProps = (state) => ({
   currentUser: state.user,
   hideNotificationDropDown: state.user.hideNotificationDropDown,
-  hideMessenger: state.user.hideMessenger,
   notifications: state.user.userNotifications
 
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  messengerPopUp: () => dispatch(messengerButton()),
   notificationDropdown: () => dispatch(notificationButton()),
   clearNotifications: () => dispatch(clearNotifications()),
   logOut: () => dispatch(logOut())

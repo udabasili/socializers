@@ -6,7 +6,7 @@ const ProtectedRoute = ({component: Component, currentUser, isAuthenticated, ...
     return ( 
         <Route {...otherProps} render={(props) => (
             isAuthenticated  ?
-            <Component currentUser={currentUser} {...props}/> :
+            <Component currentUser={currentUser} {...props} {...otherProps}/> :
             <Redirect to={{
                 pathname:"/auth/register",
                 state: {from: props.location}

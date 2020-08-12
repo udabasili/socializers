@@ -22,12 +22,15 @@
 
     .post-box{
         background-color: $color-primary-light;
-        width: 50vw;
+        width: 60vw;
         border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
 
         @include response-website(phone) {
-            width: 80%;
-
+            width: 85%;
 
         }
 
@@ -42,27 +45,12 @@
         }
 
         &__input{
-            width: 95%;
-            min-height: 5vh;
+            height: 80%;
             display: flex;
-            justify-content: center;
-            padding: 10px;
             border-radius: 1rem;
-            margin: 2.8rem auto;
+            width: 96%;
+            padding: 1.5rem;
 
-            @include response-website(phone) {
-                padding: 5px;
-                margin: 2.4rem auto;
-
-            }
-
-            @include response-website(tab-port) {
-                width: 70vw;
-
-
-            }
-
-            @include response-website(tab-land) {}
             
         }
 

@@ -5,7 +5,6 @@ import {connect} from "react-redux";
 import validator from '../components/validator';
 import { Register, Login } from '../redux/user/user.actions';
 import { removeError } from '../redux/error/error.actions';
-import CCManager from '../services/cometChat';
 import FormComponent from '../components/form-component';
 
 
@@ -74,12 +73,16 @@ class Auth extends Component {
         })
         )
       }
-    }
+	}
+	
     componentWillUnmount(){
       this.props.removeError()
     }
 
-    //update state based on name to input
+	/**
+	 *  update state based on name to input
+	 * @param {*} e 
+	 */
     onChangeHandlerLogin= (e) =>{
       let {name, value} = e.target;
       this.setState((prevState)=>({
@@ -90,7 +93,12 @@ class Auth extends Component {
         }
       }))
     }
-    //handle the onchange for Register state
+
+	/**
+	 * handle the onchange for Register state
+	 * @param {*} e 
+	 */
+
     onChangeHandlerRegister = (e) =>{
     const {name, value} = e.target;
     this.setState((prevState)=>({
@@ -112,188 +120,149 @@ class Auth extends Component {
   }
 
  
-  onBlurHandler = (e) =>{
-    const {name} = e.target
-    this.setState((prevState)=>({
-      ...prevState,
-      registerData: {
-        ...prevState.registerData,
-        [name]: ({
-          ...prevState.registerData[name],
-          focused: true
-          })
-        }
-      })
-    )
-  }
+	onBlurHandler = (e) =>{
+		const {name} = e.target
+		this.setState((prevState)=>({
+		...prevState,
+		registerData: {
+			...prevState.registerData,
+			[name]: ({
+			...prevState.registerData[name],
+			focused: true
+			})
+			}
+		})
+		)
+	}
 
-  onSubmitHandler = (e) =>{
-      let userData = {
-        name: this.state.registerData.name.value,
-        username:this.state.registerData.username.value,
-        email:this.state.registerData.email.value,
-        password: this.state.registerData.password.value,
-        }
-        
-      e.preventDefault()
-      switch (this.state.auth) {
-        case "register":
-          this.props.Register(userData)
-            .then((response) =>{
-              let currentUserId = response._id;
-                this.props.history.push(
-                  `/user-info/${currentUserId}/add`
-                );
+	onSubmitHandler = (e) =>{
+		let userData = {
+			name: this.state.registerData.name.value,
+			username:this.state.registerData.username.value,
+			email:this.state.registerData.email.value,
+			password: this.state.registerData.password.value,
+		}
+        e.preventDefault()
+		switch (this.state.auth) {
+			case "register":
+			this.props.Register(userData)
+				.then((response) =>{
+				let currentUserId = response._id;
+					this.props.history.push(
+					`/user-info/${currentUserId}/add`
+					);				
+				
+			})
+				break;
+			case "login":
+				this.props.Login(this.state.loginData).then((response)=>{
+				const previousPath = this.state.previousPath
+				if(previousPath){
+					this.props.history.push(previousPath)
+				}
+				else{
+				this.props.history.push("/")
 
-              CCManager.createUser(response.username, response.name)
-              .then((result) => {
-              }).catch((err) => {
-                
-              });
-              
-              
-        })
-          break;
-        case "login":
-          this.props.Login(this.state.loginData).then((response)=>{
-            const previousPath = this.state.previousPath
-            if(previousPath){
-              this.props.history.push(previousPath)
-
-            }
-            else{
-              this.props.history.push("/")
-
-            }
-            
-
-          })
-            
-          break;
-        default:
-          break;
+				}
+          	})    
+          		break;
+        	default:
+          		break;
       }
       
     }
 
-  
-
-    changeAuthState = (value)=>{
-      this.setState({auth:value})
-    }
-
 	render() {
-		const { error,history, removeError } = this.props;
+		const { error } = this.props;
 		const{auth, registerData, loginData } = this.state;
-		history.listen(() =>{
-		removeError()
-		})
 
 		return (
 		<div className="auth">
-		<section className="auth__left-section"></section>
-		<section className="auth__right-section">
-			<div className="alert-error">{
-				error.error === "Email doesn't exist. Please Register" ? 
-				<div>
-				<span>Email doesn't exist. Please </span>
-				<span 
-				className="switch-auth" 
-				style={{color:"blue", cursor:"pointer"}} 
-				onClick={()=>this.changeAuthState("register")}> Register </span>
+			<section className="auth__left-section"></section>
+			<section className="auth__right-section">
+				<div className="alert-error">{
+					error && error.error
+				}
 				</div>
-				:
-				error.error
-			}
-			</div>
-			<form className="form" onSubmit={this.onSubmitHandler} >
-			{(auth === "register") ?
+				<form className="form" onSubmit={this.onSubmitHandler} >
+				{(auth === "register") ?
+					<React.Fragment>
+					<FormComponent
+						name='name'
+						onChangeHandler={this.onChangeHandlerRegister}
+						labelIcon={faUserTag}
+						label='name'
+						value={registerData.name.value}
+					/>
+					<FormComponent
+						name='username'
+						onChangeHandler={this.onChangeHandlerRegister}
+						labelIcon={faUser}
+						label='username'
+						value={registerData.username.value}
+					/>
+					<FormComponent
+						name='email'
+						onChangeHandler={this.onChangeHandlerRegister}
+						labelIcon={faEnvelope}
+						type='email'
+						validated={registerData.email.validated}
+						error='Email must be valid'
+						label='email'
+						focused={registerData.email.focused}
+						onBlurredHandler={this.onBlurHandler}
+						value={registerData.email.value}
+					/>
+						<FormComponent
+						name='password'
+						validated={registerData.password.validated}
+						onChangeHandler={this.onChangeHandlerRegister}
+						labelIcon={faKey}
+						type='password'
+						error='Password must be at least 7 characters'
+						label='Password (Must be at least 7 Characters)'
+						focused={registerData.password.focused}
+						onBlurredHandler={this.onBlurHandler}
+						value={registerData.password.value}
+						/>
+						<FormComponent
+						name='confirmPassword'
+						validated={registerData.confirmPassword.validated}
+						onChangeHandler={this.onChangeHandlerRegister}
+						labelIcon={faKey}
+						type='password'
+						error="Your passwords don't match"
+						label='Confirm Password'
+						focused={registerData.confirmPassword.focused}
+						onBlurredHandler={this.onBlurHandler}
+						value={registerData.confirmPassword.value}
+						/>
+					
+					
+				</React.Fragment> :
 				<React.Fragment>
-				<FormComponent
-					name='name'
-					onChangeHandler={this.onChangeHandlerRegister}
-					labelIcon={faUserTag}
-					label='name'
-					value={registerData.name.value}
-				/>
-				<FormComponent
-					name='username'
-					onChangeHandler={this.onChangeHandlerRegister}
-					labelIcon={faUser}
-					label='username'
-					value={registerData.username.value}
-				/>
-				<FormComponent
-					name='email'
-					onChangeHandler={this.onChangeHandlerRegister}
-					labelIcon={faEnvelope}
-					type='email'
-					validated={registerData.email.validated}
-					error='Email must be valid'
-					label='email'
-					focused={registerData.email.focused}
-					onBlurredHandler={this.onBlurHandler}
-					value={registerData.email.value}
-				/>
-					<FormComponent
-					name='password'
-					validated={registerData.password.validated}
-					onChangeHandler={this.onChangeHandlerRegister}
-					labelIcon={faKey}
-					type='password'
-					error='Password must be at least 7 characters'
-					label='Password (Must be at least 7 Characters)'
-					focused={registerData.password.focused}
-					onBlurredHandler={this.onBlurHandler}
-					value={registerData.password.value}
-					/>
-					<FormComponent
-					name='confirmPassword'
-					validated={registerData.confirmPassword.validated}
-					onChangeHandler={this.onChangeHandlerRegister}
-					labelIcon={faKey}
-					type='password'
-					error="Your passwords don't match"
-					label='Confirm Password'
-					focused={registerData.confirmPassword.focused}
-					onBlurredHandler={this.onBlurHandler}
-					value={registerData.confirmPassword.value}
-					/>
-				
-				
-			</React.Fragment> :
-			<React.Fragment>
-					<FormComponent
-					name='email'
-					onChangeHandler={this.onChangeHandlerLogin}
-					labelIcon={faEnvelope}
-					type='email'
-					label='email'
-					value={loginData.email}
-					/>
-					<FormComponent
-					name='password'
-					validated={loginData.password}
-					onChangeHandler={this.onChangeHandlerLogin}
-					labelIcon={faKey}
-					type='password'
-					label='password'
-					value={loginData.password}
-					/>
-			</React.Fragment>
-			}
-			<input type="submit" className="submit-button" value="Submit"/>
-		</form>
-		{(auth === "register") ?
-			<div className="register-form-option">
-			<span>Registered Already? </span>
-			<span className="switch-auth" onClick={() => this.changeAuthState("login")}>Login</span>
-			</div> :
-			<div className="login-form-option">
-			</div>
-
-			}
-		</section>
+						<FormComponent
+						name='email'
+						onChangeHandler={this.onChangeHandlerLogin}
+						labelIcon={faEnvelope}
+						type='email'
+						label='email'
+						value={loginData.email}
+						/>
+						<FormComponent
+						name='password'
+						validated={loginData.password}
+						onChangeHandler={this.onChangeHandlerLogin}
+						labelIcon={faKey}
+						type='password'
+						label='password'
+						value={loginData.password}
+						/>
+				</React.Fragment>
+				}
+				<input type="submit" className="submit-button" value="Submit"/>
+			</form>
+			</section>
 		</div>  
 		)
 	}

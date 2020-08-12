@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 50.5%;
 
     @include response-website(phone) {
       font-size: 50%;
@@ -22,4 +22,11 @@ html{
         font-size: 75%;
     }
 
+}
+
+body{
+    color: black;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(223, 222, 222);
 }

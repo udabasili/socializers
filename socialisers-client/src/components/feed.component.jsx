@@ -7,8 +7,7 @@ import Modal from './modal.component';
 import Snackbar from "@material-ui/core/Snackbar";
 import openSocket from 'socket.io-client';
 import PostForm from './post-form.component';
-import { addNotification, getNews, setUsers, notificationButton, messengerButton } from '../redux/user/user.actions';
-import CCManager from '../services/cometChat';
+import { addNotification, getNews, setUsers, notificationButton } from '../redux/user/user.actions';
 
 class Feed extends Component {
   state = {
@@ -28,12 +27,6 @@ class Feed extends Component {
     } else {
       url = "http://localhost:8081";
     }
-
-    CCManager.login(this.props.currentUser.username).then(
-      (user) => {
-		CCManager.getLoggedinUser()
-	  }
-    );
 
     this.socket = openSocket(url);
     this.socket.on("posts", (data) => {
@@ -123,6 +116,7 @@ class Feed extends Component {
       successMessage,
     }));
   };
+
   render() {
     const {
       showModal,
@@ -135,7 +129,7 @@ class Feed extends Component {
       open,
 	} = this.state;
 	
-	const { currentUser, messengerPopUp, notificationDropdown } = this.props
+	const { currentUser, notificationDropdown } = this.props
 	
     return (
       <section className="feed-section">
@@ -160,7 +154,7 @@ class Feed extends Component {
         )}
         <div
           className="post-box"
-          onClick={() => (notificationDropdown(true), messengerPopUp(true))}
+          onClick={() => notificationDropdown(true)}
         >
           <textarea
             placeholder="Add Post"
@@ -200,7 +194,6 @@ const mapDispatchToProps = (dispatch) => ({
     loadPosts: (posts) => dispatch(loadPosts(posts)),
     setUsers: (users) => dispatch(setUsers(users)),
     addNotification: (notification) => dispatch(addNotification(notification)),
-    messengerPopUp: (hideWindow) => dispatch(messengerButton(hideWindow)),
     notificationDropdown: (hideWindow) => dispatch(notificationButton(hideWindow)),
 })
  

@@ -154,6 +154,11 @@
         justify-content: center;
         align-items: center;
 
+        @include response-website(phone){
+            width: 95%;
+            justify-content: space-between;
+        }
+
         .user-icon{
             margin: 0 10px;
         }
@@ -166,6 +171,11 @@
         display: flex;
         justify-content: center;
         border-radius: 1rem;
+
+        @include response-website(phone){
+            width: 100%;
+            min-width: 9vh;
+        }
 
         &::placeholder{
             @include response-website(phone) {
@@ -196,6 +206,9 @@
         margin-top: 2rem;
         display: flex;
 
+        @include response-website(phone){
+            width: 95%;
+        }
         .user-icon {
             margin: 0rem 2rem 0 0;
             position: relative;

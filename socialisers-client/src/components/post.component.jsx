@@ -4,7 +4,7 @@ import { faThumbsUp, faComment, faCheck } from '@fortawesome/free-solid-svg-icon
 import { addCommentToPost, addLikeToPost, deletePost } from '../redux/post/post.actions';
 import { connect } from 'react-redux'
 import noImage from '../assets/images/no-image.png'
-import { messengerButton, notificationButton } from '../redux/user/user.actions';
+import { notificationButton } from '../redux/user/user.actions';
 
 
 function Post({
@@ -14,7 +14,6 @@ function Post({
   addLikeToPost,
   editPostHandler,
   deletePost,
-  messengerButton,
   notificationButton,
   showSnack,
 }) {
@@ -72,7 +71,7 @@ function Post({
     }
   };
   return (
-    <div className="post" onClick={() => (notificationButton(true), messengerButton(true))}>
+    <div className="post" onClick={() => (notificationButton(true))}>
       <div className="post__user">
         <div className="user-icon">
           <div className="user-icon__photo-border">
@@ -137,7 +136,7 @@ function Post({
       <hr />
       <div className="comment">
         <div className="comment__input-container">
-          {!isMobile && (
+          {(
             <div className="user-icon">
               <div className="user-icon__photo-border">
                 <img
@@ -165,7 +164,7 @@ function Post({
           <ul className="comment__list">
             {commentList.map((comment, index) => (
               <li key={index} className="comment__item">
-                {!isMobile && (
+                {(
                   <div className="user-icon">
                     <div className="user-icon__photo-border">
                       <img
@@ -197,7 +196,6 @@ const mapDispatchToProps = {
   addCommentToPost,
   addLikeToPost,
   deletePost,
-  messengerButton,
   notificationButton,
 };
 

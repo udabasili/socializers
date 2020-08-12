@@ -23,9 +23,17 @@
 
         }
         @include response-website(tab-port) { 
+            width: 0
         }
 
         @include response-website(tab-land) { 
+            width: 40% ;
+            clip-path: polygon(
+                0 0 ,
+                100% 0,
+                100% 100%
+                0 100%
+            );
         }
        
     }
@@ -40,9 +48,11 @@
 
         }
         @include response-website(tab-port) { 
+            width: 100%;
         }
         
         @include response-website(tab-land) { 
+            width: 60%;
         }
       
     }

@@ -1,23 +1,20 @@
 .nav-icon{
-    background-color: black;
+    background-color: white;
     width: 4.7rem;
     height: 4.7rem;
     border-radius: 50%;
-    background-color: black;
-    color: $color-primary-light;
+    font-size: 2.5rem;
+    color: $color-primary-dark;
     position: relative;
 
-    @include response-website(phone) {
-        transform: scale(.6);
+ 
 
-
-    }
 
     &__icon{
         position: absolute;
         top: 50%;
         left: 50%;
-        font-size: 20px;
+        // font-size: 20px;
         transform: translate(-50%, -50%);
     }
 }

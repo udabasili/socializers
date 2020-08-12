@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Provider } from "react-redux";
 import { store, persistor } from './redux/store';
 import { BrowserRouter as Router } from "react-router-dom";
@@ -15,13 +15,34 @@ if (localStorage.getItem("validator")) {
   
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+  const handleWindowSizeChange = () => {
+
+    if (window.innerWidth <= 600) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+
+  };
+
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange);
+
+		}
+	}, [isMobile])
+	
   return (
     <React.Fragment>
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Router>
-            <Navigation />
-            <MainRouter />
+            <Navigation isMobile={isMobile}/>
+            <MainRouter isMobile={isMobile} />
           </Router>
         </PersistGate>
       </Provider>

@@ -5,7 +5,7 @@ function Notification({notifications}) {
     return (
         <div className="dropdown">
             <div className="dropdown__items">
-                {notifications.map((notification, index) => (
+                {notifications && notifications.map((notification, index) => (
                     <div className="dropdown__item" key={index}>
                         <div className="dropdown__item__details">
                             <span class="name">{notification.text}</span>
