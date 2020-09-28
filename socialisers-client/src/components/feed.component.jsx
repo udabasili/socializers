@@ -5,6 +5,7 @@ import ReactLoading from 'react-loading';
 import Post from './post.component'
 import Modal from './modal.component';
 import Snackbar from "@material-ui/core/Snackbar";
+import Alert from '@material-ui/lab/Alert';
 import openSocket from 'socket.io-client';
 import PostForm from './post-form.component';
 import { addNotification, getNews, setUsers, notificationButton } from '../redux/user/user.actions';
@@ -17,6 +18,7 @@ class Feed extends Component {
     horizontal: 0,
     posts: null,
     open: false,
+    severity: null,
     successMessage: null
   };
 
@@ -32,15 +34,19 @@ class Feed extends Component {
     this.socket.on("posts", (data) => {
       if (data.action === "updatedPosts") {
         this.props.loadPosts(data.updatedPost);
+        return;
       }
     });
     this.socket.on("users", (data) => {
       if (data.action === "updatedUsers") {
         this.props.setUsers(data.updatedUsers);
+        return;
       }
     });
     this.socket.on("notification", (data) => {
-      this.props.addNotification(data.notification);
+      console.log(data)
+      this.props.addNotification(data.notification.text);
+      return;
     });
     this.props.getPosts();
     this.props.getNews();
@@ -105,6 +111,7 @@ class Feed extends Component {
     vertical = null,
     horizontal = null,
     successMessage = null,
+    severity=null,
     open
   ) => {
     this.setState((prevState) => ({
@@ -112,6 +119,7 @@ class Feed extends Component {
       showModal: value,
       vertical,
       horizontal,
+      severity,
       open,
       successMessage,
     }));
@@ -136,12 +144,15 @@ class Feed extends Component {
         {open && (
           <Snackbar
             anchorOrigin={{ vertical, horizontal }}
-            autoHideDuration={6000}
+            autoHideDuration={2000}
             open={open}
             onClose={this.handleClose}
-            message={successMessage}
             key={vertical + horizontal}
-          />
+          >
+            <Alert onClose={this.handleClose} severity="success">
+              {successMessage}
+            </Alert>
+            </Snackbar>
         )}
         {showModal && (
           <Modal>

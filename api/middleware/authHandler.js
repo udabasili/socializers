@@ -114,6 +114,12 @@ const setCurrentUser  = function(req, res, next){
             })
         }
         jwt.verify(token, process.env.SECRET_KEY, async function(err, decoded) {
+            if(err){
+                return next({
+                    status: 401,
+                    message: "unAuthorized User"
+                })
+            }
             let decodedId = decoded._id;
             let paramsId =  req.params.userId;
             if (decoded && decodedId === paramsId){     

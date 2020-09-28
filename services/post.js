@@ -73,17 +73,17 @@ class PostService{
             })
         return posts
     }
-
+a
     static async addCommentToPost(comment, postId){
         let post = await Models.Post.findById(postId)
         let comments = [...post.comments]
         comments.push(comment)
+        comments = comments.sort(function(a, b){ return b.createdOn - a.createdOn})
         post.comments = comments
         post = await post.save()
-        comments = post.comments
         const posts = await Models.Post.find()
             .sort({
-                createdAt: 'desc'
+                'createdAt': -1
             })
             .populate('user', {
                 username: true,
@@ -92,6 +92,7 @@ class PostService{
                 city: true,
                 country: true
             })
+        console.log(comments[0])
         return {comments, posts}
     }
 

@@ -23,23 +23,45 @@ function PostForm({ showModalHandler, addPost, editMode, currentPost, editPost})
         if(editMode){
             editPost(post, currentPost._id)
                 .then(() => {
+                    setPost('')
                     showModalHandler(false, 'top', 'center', "Post Successfully Edit", true )
-                    }
-                )
+                    })
+                .catch((error) => {
+                    showModalHandler(
+                        false,
+                        "top",
+                        "center",
+                        error,
+                        'error',
+                        true
+                    );
+                })
                 
 
         } else{
             addPost(post)
                 .then(() => {
+                    setPost('')
                     showModalHandler(
                       false,
                       "top",
                       "center",
                       "Post Successfully Added",
+                      'success',
                       true
                     );
-                }
-            )
+                })
+                .catch((error) => {
+                    
+                    showModalHandler(
+                        false,
+                        "top",
+                        "center",
+                        error,
+                        'error',
+                        true
+                    );
+                })
         }
         
     }

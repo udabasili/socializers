@@ -1,5 +1,5 @@
 import  React from 'react';
-import {Redirect, Route, Switch, withRouter} from "react-router-dom";
+import {Redirect, Route, Switch, useHistory, withRouter} from "react-router-dom";
 import Auth from './pages/auth.component';
 import NotFoundPage from './components/not-found';
 import Home from './pages/home.component';
@@ -16,13 +16,19 @@ function MainRouter(props) {
 
 	const {currentUser, isAuthenticated} = props.currentUser
 	const{ getUsers } = props
+	const history = useHistory()
 	React.useEffect(() => {
-		props.history.listen(() => {
 		props.removeError()
-		notificationButton(true)
-		})
-		getUsers()
-	},[currentUser.username])
+		if(isAuthenticated){
+			getUsers()
+
+		}
+	},[currentUser.username, isAuthenticated])
+	history.listen(()=>{
+		
+		props.removeError()
+		props.notificationButton(true)
+	})
 	return (
 			<React.Fragment>
 				<Switch>

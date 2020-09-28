@@ -1,6 +1,16 @@
 /**FORM TYPE 1 **/
 
 .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+
+    @include response-website(phone) {
+        height: 50%;
+    }
+
+
     &__header{
         position: absolute;
         display: flex;
@@ -49,10 +59,25 @@
         border: none;
         position: relative;
         background-color: transparent;
+        outline: none;
+        box-shadow: none;
         font-size: 1.5rem;
         border-bottom:3px solid $color-primary;
         width: 100%;
-        height: 100%;
+        height: 4rem;
+  
+
+        @include response-website(phone){
+            height: 3rem;
+        }
+
+        @include response-website(tab-port) {
+            height: 3rem;
+        }
+
+        @include response-website(tab-land) {
+            height: 3rem;
+        }
 
         &:focus{
             outline: none;
@@ -107,11 +132,17 @@
 
 .alert-error{
     color: rgb(255, 0, 0);
+    position: relative;
+    top: 5rem;
     background-color: rgb(247, 158, 158);
     font-size: 2rem;
     text-align: center;
     width: 80%;
-    margin: 4rem auto 0 auto
+    margin: 4rem auto 0 auto;
+
+    @include response-website(phone){
+        top: -5rem;
+    }
 
 }
 
@@ -162,7 +193,7 @@
         display: block;
         border: 1px solid #ccc;
         border-radius: 4px;
-        height: 4.5rem;
+        height: 6rem;
         box-sizing: border-box;
 
         @include response-website(phone) {

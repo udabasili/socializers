@@ -66,6 +66,7 @@ function Post({
       };
       addCommentToPost(commentContent, post._id).then((response) => {
         setCommentList(response);
+        setComment('')
         showSnack("top", "center", "New Comment Added", true);
       });
     }
@@ -92,7 +93,7 @@ function Post({
       <div className="post__options">
         <div className="post__status">
           <div className="likes">{likeList.length} like</div>
-          <div className="comments">{commentList.length} Comments</div>
+          <div className="comments">{commentList !== undefined && commentList.length} Comments</div>
         </div>
         {currentUser.username === user.username && (
           <div className="post__edit">
@@ -160,7 +161,7 @@ function Post({
             onKeyPress={addComment}
           />
         </div>
-        {commentList.length > 0 && (
+        {commentList !== undefined && commentList.length > 0 && (
           <ul className="comment__list">
             {commentList.map((comment, index) => (
               <li key={index} className="comment__item">

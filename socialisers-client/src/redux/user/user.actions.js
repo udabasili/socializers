@@ -66,7 +66,6 @@ export const Register = (data) => {
                 })
                 .catch((error) =>{                    
                     dispatch(addError(error.message))
-                    return rej(error.message)
                 })
         })
     }  
@@ -86,7 +85,7 @@ export const Login = (data) => {
                 })
                 .catch((error) =>{                                        
                     dispatch(addError(error.message))
-                    return rej(error.message)
+                    return rej()
                 })
         })
     }  
@@ -191,24 +190,21 @@ export const getLocation = (coords, userId) =>{
 
 export function verifyUser() {
     return dispatch => {
-        return new Promise((resolve, reject) => {
-            return apiCall('get', '/authenticate-user')
-                .then((response) => {
-                    setAuthorizationToken(response.validator)
-                    dispatch(removeError())
-                    dispatch(setCurrentUser(response.currentUser))
-                    localStorage.setItem("userId", response.currentUser._id);
-                    localStorage.setItem("validator", response.validator)
-                    return resolve(response.currentUser.username)
-                })
-                .catch((e) => {
-                    dispatch(addError('Please Login again'))
-                    dispatch(setCurrentUser({}))
-                    localStorage.clear()
-                    setAuthorizationToken(false)
-                    return reject()
-                })
-        })
+        return apiCall('get', '/authenticate-user')
+            .then((response) => {
+                setAuthorizationToken(response.validator)
+                dispatch(removeError())
+                dispatch(setCurrentUser(response.currentUser))
+                localStorage.setItem("userId", response.currentUser._id);
+                localStorage.setItem("validator", response.validator)
+            })
+            .catch((e) => {
+                dispatch(addError('Please Login again'))
+                dispatch(setCurrentUser({}))
+                localStorage.clear()
+                setAuthorizationToken(false)
+            })
+        
     }
 }
 

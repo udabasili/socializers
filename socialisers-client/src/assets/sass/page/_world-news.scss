@@ -1,6 +1,6 @@
 .world-news {
     @include defaultPadding;
-    width: 100vw;
+    width: 80vw;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -21,10 +21,10 @@
         
     }
     .card{
-            height: 90vh;
+            height: 50vh;
         @include response-website(phone) {
             width: 45vw;
-            height: 60vh;
+            height: 50vh;
 
         }
         

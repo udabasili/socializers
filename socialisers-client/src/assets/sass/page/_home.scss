@@ -50,6 +50,7 @@
             border-radius: 1rem;
             width: 96%;
             padding: 1.5rem;
+            margin: 3rem auto;
 
             
         }
@@ -186,4 +187,11 @@
     
 }
 
+.MuiSnackbar-anchorOriginTopCenter {
+    width: 50vw;
+    margin: 0 auto;
+}
 
+.MuiAlert-message{
+    font-size: 2rem;
+}

@@ -8,7 +8,7 @@
     
     &__content{
         display: flex;
-        font-size: 4rem;
+        font-size: 2rem;
         align-items: center;
         padding: 10px;
         flex-direction: column;
@@ -17,7 +17,7 @@
         
 
         .username{
-            font-size: 2rem;
+            font-size: 1.2rem;
             font-weight: bold;
             text-transform: uppercase;
             text-align: center;
@@ -28,11 +28,11 @@
                }
 
                @include response-website(tab-port) {
-                    font-size: 1.2rem
+                    font-size: 1rem
                }
 
                @include response-website(tab-land) {
-                    font-size: 1.5rem
+                    font-size: 1.2rem
 
 
                }

@@ -213,7 +213,8 @@
 }
 
 .active{
-    background-color: rgb(223, 222, 222);
+    background-color: rgba($color: #000000, $alpha: 0.3);
+
 
     @include response-website(phone){
         background-color: $color-primary-light;

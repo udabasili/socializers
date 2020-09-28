@@ -92,7 +92,11 @@ class UserImageUpload extends Component {
             currentUser._id === paramsId ?
             <div className="user-images-upload">
                 { (showModal && imageFile) && 
-                    <ImageModal imageFile={imageFile} getImageUrl={this.getImageUrl} cardNum={cardId} closeModal={this.closeModal} />}
+                    <ImageModal 
+                        imageFile={imageFile} 
+                        getImageUrl={this.getImageUrl} 
+                        cardNum={cardId} 
+                        closeModal={this.closeModal} />}
                 <div className="user-images">
                     {usersImagesComponents.map((number) =>{
                     return <ImageUploadCard key={number}

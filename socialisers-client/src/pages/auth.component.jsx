@@ -6,13 +6,14 @@ import validator from '../components/validator';
 import { Register, Login } from '../redux/user/user.actions';
 import { removeError } from '../redux/error/error.actions';
 import FormComponent from '../components/form-component';
-
+import Loading from '../components/loading.componet';
 
 class Auth extends Component {
   constructor(props) {
     super(props)
     this.state={
-        loggedIn:false,
+		loggedIn:false,
+		loading: false,
         auth:props.auth || "register",
         error:null,
         previousPath:"",
@@ -142,21 +143,39 @@ class Auth extends Component {
 			email:this.state.registerData.email.value,
 			password: this.state.registerData.password.value,
 		}
-        e.preventDefault()
+		e.preventDefault()
+		this.setState(prevState =>({
+			...prevState,
+			loading: true
+		}))
 		switch (this.state.auth) {
 			case "register":
 			this.props.Register(userData)
 				.then((response) =>{
+				this.setState(prevState => ({
+					...prevState,
+					loading: false
+				}))
 				let currentUserId = response._id;
 					this.props.history.push(
 					`/user-info/${currentUserId}/add`
 					);				
 				
-			})
+				})
+				.catch(() =>{
+					this.setState(prevState => ({
+						...prevState,
+						loading: false
+					}))
+				})
 				break;
 			case "login":
 				this.props.Login(this.state.loginData).then((response)=>{
 				const previousPath = this.state.previousPath
+				this.setState(prevState => ({
+					...prevState,
+					loading: false
+				}))
 				if(previousPath){
 					this.props.history.push(previousPath)
 				}
@@ -164,7 +183,12 @@ class Auth extends Component {
 				this.props.history.push("/")
 
 				}
-          	})    
+          	}).catch(() =>{
+				  this.setState(prevState => ({
+				  	...prevState,
+				  	loading: false
+				  }))
+			  })   
           		break;
         	default:
           		break;
@@ -174,10 +198,11 @@ class Auth extends Component {
 
 	render() {
 		const { error } = this.props;
-		const{auth, registerData, loginData } = this.state;
+		const{auth, registerData, loginData, loading } = this.state;
 
 		return (
 		<div className="auth">
+			{loading &&  <Loading/>}
 			<section className="auth__left-section"></section>
 			<section className="auth__right-section">
 				<div className="alert-error">{
@@ -219,8 +244,8 @@ class Auth extends Component {
 						onChangeHandler={this.onChangeHandlerRegister}
 						labelIcon={faKey}
 						type='password'
-						error='Password must be at least 7 characters'
-						label='Password (Must be at least 7 Characters)'
+						error='Password must be at least 8 characters'
+						label='Password (Must be at least 8 Characters)'
 						focused={registerData.password.focused}
 						onBlurredHandler={this.onBlurHandler}
 						value={registerData.password.value}

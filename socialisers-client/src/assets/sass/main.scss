@@ -5,6 +5,7 @@
 @import "./base/topography";
 @import "./base/base";
 @import "./base/utilities";
+@import './base/animation';
 
 @import "./component/button";
 @import "./component/form";
@@ -18,6 +19,7 @@
 @import './component/card';
 @import './component/chat-messenger';
 @import './component/drop-down';
+@import './component/loader';
 
 @import "./layout/header";
 @import "./layout/navigation";
