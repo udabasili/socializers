@@ -66,6 +66,7 @@ export const Register = (data) => {
                 })
                 .catch((error) =>{                    
                     dispatch(addError(error.message))
+                    return rej()
                 })
         })
     }  

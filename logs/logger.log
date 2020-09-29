@@ -7699,3 +7699,9 @@ Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | User admin communicated wit
 Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
 Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | User admin communicated with the server | 
 Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 18:40:42 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 29 Sep 2020 18:40:43 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 29 Sep 2020 18:42:04 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 29 Sep 2020 18:42:04 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 29 Sep 2020 18:42:43 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
+Tue, 29 Sep 2020 18:42:57 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
