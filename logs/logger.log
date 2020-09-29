@@ -7609,3 +7609,28 @@ Mon, 28 Sep 2020 19:56:26 GMT | INFO | loggers.log | User admin communicated wit
 Mon, 28 Sep 2020 19:56:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
 Mon, 28 Sep 2020 19:56:26 GMT | INFO | loggers.log | User admin communicated with the server | 
 Mon, 28 Sep 2020 19:56:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 00:49:08 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 29 Sep 2020 00:49:08 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 29 Sep 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:51:01 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:51:01 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:51:03 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:51:03 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:51:03 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:51:03 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:51:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:51:54 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:51:54 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:51:54 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:55:32 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:55:33 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:55:33 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:55:33 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 00:55:45 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 00:56:46 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 01:02:23 GMT | ERROR | loggers.log | unAuthorized User | 

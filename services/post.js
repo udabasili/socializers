@@ -92,7 +92,6 @@ a
                 city: true,
                 country: true
             })
-        console.log(comments[0])
         return {comments, posts}
     }
 

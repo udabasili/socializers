@@ -61,7 +61,7 @@ class SearchUsers extends Component {
                   <div className="user-icon">
                     <div className="user-icon__photo-border">
                       <img
-                        src={user.userImages[0]}
+                        src={user.userImage}
                         alt="your profile"
                         className="user-icon__photo"
                       />

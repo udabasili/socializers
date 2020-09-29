@@ -15,7 +15,7 @@ class Profile extends Component {
                 <div className='profile'>
                 <section className="profile__left">
                     <div className="profile__avatar">
-                        <img src={user.userImages[0] ? user.userImages[0] : noImage }
+                        <img src={user.userImage? user.userImage : noImage }
                             className='profile__image' />
                     </div>
                     <div className='profile__user-info'>
