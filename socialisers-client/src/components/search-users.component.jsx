@@ -5,6 +5,7 @@ import { faUserPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { addFriend } from '../redux/user/user.actions';
 import {  Link } from 'react-router-dom';
 import { Snackbar } from '@material-ui/core';
+import Alert from '@material-ui/lab/Alert';
 
 class SearchUsers extends Component {
 	state = {
@@ -46,6 +47,7 @@ class SearchUsers extends Component {
     const { currentUser, setShowModal, addFriend } = this.props;
     return (
       <div className="users">
+        
         <FontAwesomeIcon
           icon={faTimes}
           color="red"
@@ -61,7 +63,7 @@ class SearchUsers extends Component {
                   <div className="user-icon">
                     <div className="user-icon__photo-border">
                       <img
-                        src={user.userImage}
+                        src={user.userImages[0]}
                         alt="your profile"
                         className="user-icon__photo"
                       />
@@ -95,12 +97,15 @@ class SearchUsers extends Component {
         {open && (
           <Snackbar
             anchorOrigin={{ vertical, horizontal }}
-            autoHideDuration={3000}
+            autoHideDuration={2000}
             open={open}
             onClose={this.handleClose}
-            message={message}
             key={vertical + horizontal}
-          />
+          >
+            <Alert onClose={this.handleClose} severity="success">
+              {message}
+            </Alert>
+          </Snackbar>
         )}
       </div>
     );

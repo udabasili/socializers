@@ -7634,3 +7634,68 @@ Tue, 29 Sep 2020 00:55:33 GMT | INFO | loggers.log | User is connect to Socket I
 Tue, 29 Sep 2020 00:55:45 GMT | ERROR | loggers.log | unAuthorized User | 
 Tue, 29 Sep 2020 00:56:46 GMT | ERROR | loggers.log | unAuthorized User | 
 Tue, 29 Sep 2020 01:02:23 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:24:27 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Tue, 29 Sep 2020 17:24:27 GMT | INFO | loggers.log | Connected to mongodb | 
+Tue, 29 Sep 2020 17:25:50 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 17:25:50 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:25:50 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:25:50 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:31:43 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 17:31:43 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:31:43 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:31:43 GMT | ERROR | loggers.log | unAuthorized User | 
+Tue, 29 Sep 2020 17:32:37 GMT | INFO | loggers.log | test1 has logged in | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:32:38 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:33:51 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 29 Sep 2020 17:33:52 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:33:52 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:34:31 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 29 Sep 2020 17:34:32 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:34:32 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:35:16 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 29 Sep 2020 17:35:17 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:35:17 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:35:44 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:35:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:35:53 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:35:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:39:37 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 29 Sep 2020 17:39:37 GMT | INFO | loggers.log | User test1 communicated with the server | 
+Tue, 29 Sep 2020 17:39:37 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | admin has logged in | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:40:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:41:02 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:41:02 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:42:27 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 29 Sep 2020 17:42:27 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:42:27 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:42:36 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:42:36 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:42:40 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:42:40 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:43:12 GMT | INFO | loggers.log | Verified User has valid token | 
+Tue, 29 Sep 2020 17:43:13 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:43:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | User admin communicated with the server | 
+Tue, 29 Sep 2020 17:44:14 GMT | INFO | loggers.log | Current User is permitted access to this route | 

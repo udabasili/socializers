@@ -8,14 +8,14 @@ class Profile extends Component {
     render() {
         let user ;
         const {userId} = this.props.match.params
-        user = this.props.users.find((user) => user._id === userId)
+        user = this.props.users !== undefined && this.props.users.find((user) => user._id === userId)
 
         return (
             (user !== undefined && userId) ?
                 <div className='profile'>
                 <section className="profile__left">
                     <div className="profile__avatar">
-                        <img src={user.userImage? user.userImage : noImage }
+                        <img src={user.userImages[0]? user.userImages[0] : noImage }
                             className='profile__image' />
                     </div>
                     <div className='profile__user-info'>

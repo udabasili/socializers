@@ -5,6 +5,7 @@
     min-height: 80vh;
     grid-template-columns:  repeat(3, 30%);
     column-gap: 2%;
+    row-gap: 3rem;
 
     @include response-website(phone) {
         width: 100vw;

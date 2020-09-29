@@ -13,7 +13,7 @@ export default class Friends extends Component {
           friends.map((friend, index) => (
             <Card
               name={friend.username}
-              image={friend.userImage}
+              image={friend.userImages[0]}
               link={`/profile/${friend._id}`}
               key={index}
               buttonTitle='View'
