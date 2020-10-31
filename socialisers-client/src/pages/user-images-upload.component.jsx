@@ -5,6 +5,7 @@ import ImageModal from "../components/image-modal.component";
 import { imageUpload } from "../redux/user/user.actions";
 import { connect } from "react-redux";
 import { Redirect } from 'react-router-dom';
+import Loading from "../components/loading.componet";
 
 class UserImageUpload extends Component {
 
