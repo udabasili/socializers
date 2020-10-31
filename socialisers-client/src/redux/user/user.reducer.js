@@ -5,7 +5,6 @@ const INITIAL_STATE = {
     users: null,
     isAuthenticated:false,
     hideNotificationDropDown: true,
-    userNotifications:[],
     news: null
 
 }
@@ -29,16 +28,6 @@ export default function userReducer (state=INITIAL_STATE, action){
                  hideNotificationDropDown: action.payload !== undefined  ? action.payload : !state.hideNotificationDropDown,
              };
          
-        case UserActionTypes.ADD_NOTIFICATION:
-            return {
-                ...state,
-                userNotifications: [...state.userNotifications, action.payload],
-            };
-        case UserActionTypes.CLEAR_NOTIFICATIONS:
-            return {
-                ...state,
-                userNotifications: [],
-            };
         case UserActionTypes.GET_NEWS:
             return {
                 ...state,

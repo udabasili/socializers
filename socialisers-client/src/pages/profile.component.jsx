@@ -55,7 +55,7 @@ class Profile extends Component {
                 <section className='profile__right'>
                     <div className="profile__bio">
                             <span className=' header-tertiary profile__bio-title'>About {user.name}</span>
-                            <span className="profile__bio-content paragraph">{user.bio}</span>
+                            <span className="paragraph profile__bio-content ">{user.bio}</span>
                     </div>
                     <div className="profile__interests">
                             <h3 className="header-tertiary profile__interest-header">Interests</h3>

@@ -59,17 +59,6 @@ function Navigation({
                   )}
                 </div>
               </li>
-              
-              <li className="navigation__item">
-                <div
-                  className="navigation__link"
-                  onClick={() => {
-                    notificationDropdown();
-                  }}
-                >
-                  <NavIcon icon={faBell} notifications={notifications} />
-                </div>
-              </li>
             </React.Fragment>
           )}
           {!isAuthenticated ? (
@@ -105,7 +94,6 @@ function Navigation({
             </li>
           )}
         </ul>
-        {!hideNotificationDropDown && <Notification />}
       </nav>
     );
 }

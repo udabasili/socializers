@@ -8,7 +8,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import Alert from '@material-ui/lab/Alert';
 import openSocket from 'socket.io-client';
 import PostForm from './post-form.component';
-import { addNotification, getNews, setUsers, notificationButton } from '../redux/user/user.actions';
+import { getNews, setUsers, notificationButton } from '../redux/user/user.actions';
 
 class Feed extends Component {
   state = {
@@ -42,11 +42,6 @@ class Feed extends Component {
         this.props.setUsers(data.updatedUsers);
         return;
       }
-    });
-    this.socket.on("notification", (data) => {
-      console.log(data)
-      this.props.addNotification(data.notification.text);
-      return;
     });
     this.props.getPosts();
     this.props.getNews();
@@ -144,7 +139,7 @@ class Feed extends Component {
         {open && (
           <Snackbar
             anchorOrigin={{ vertical, horizontal }}
-            autoHideDuration={2000}
+            autoHideDuration={20000}
             open={open}
             onClose={this.handleClose}
             key={vertical + horizontal}
@@ -204,7 +199,6 @@ const mapDispatchToProps = (dispatch) => ({
     getNews: () => dispatch(getNews()),
     loadPosts: (posts) => dispatch(loadPosts(posts)),
     setUsers: (users) => dispatch(setUsers(users)),
-    addNotification: (notification) => dispatch(addNotification(notification)),
     notificationDropdown: (hideWindow) => dispatch(notificationButton(hideWindow)),
 })
  

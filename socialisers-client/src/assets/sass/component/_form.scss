@@ -141,7 +141,8 @@
     margin: 4rem auto 0 auto;
 
     @include response-website(phone){
-        top: -5rem;
+        top: -10rem;
+        font-size: 1.5rem;
     }
 
 }

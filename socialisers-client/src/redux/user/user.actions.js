@@ -21,10 +21,7 @@ export const setUsers = (users) => ({
     payload: users
 })
 
-export const addNotification = (notification) => ({
-    type: UserActionTypes.ADD_NOTIFICATION,
-    payload: notification
-})
+
 
 export const clearNotifications = () => ({
     type: UserActionTypes.CLEAR_NOTIFICATIONS,

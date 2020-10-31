@@ -38,4 +38,17 @@
 
 .paragraph{
     font-size: 1.5rem;
+
+    @include response-website(phone) {
+        font-size: 1.2rem;
+    }
+
+    @include response-website(tab-port) {
+        font-size: 1.2rem;
+    }
+
+    @include response-website(tab-land) {
+        font-size: 1.3rem;
+    }
+    
 }

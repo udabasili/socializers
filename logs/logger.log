@@ -7705,3 +7705,198 @@ Tue, 29 Sep 2020 18:42:04 GMT | INFO | loggers.log | Serving is running on PORT 
 Tue, 29 Sep 2020 18:42:04 GMT | INFO | loggers.log | Connected to mongodb | 
 Tue, 29 Sep 2020 18:42:43 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
 Tue, 29 Sep 2020 18:42:57 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
+Thu, 01 Oct 2020 01:46:54 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Thu, 01 Oct 2020 01:46:54 GMT | INFO | loggers.log | Connected to mongodb | 
+Thu, 01 Oct 2020 01:48:34 GMT | INFO | loggers.log | admin has logged in | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | User admin communicated with the server | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | User admin communicated with the server | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | User admin communicated with the server | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | User admin communicated with the server | 
+Thu, 01 Oct 2020 01:48:35 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Thu, 01 Oct 2020 01:48:52 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Thu, 01 Oct 2020 01:48:52 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Thu, 01 Oct 2020 01:48:52 GMT | INFO | loggers.log | Connected to mongodb | 
+Thu, 01 Oct 2020 01:48:57 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Thu, 01 Oct 2020 01:48:57 GMT | INFO | loggers.log | Connected to mongodb | 
+Thu, 01 Oct 2020 01:48:57 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Thu, 01 Oct 2020 01:52:12 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Thu, 01 Oct 2020 01:52:12 GMT | INFO | loggers.log | Connected to mongodb | 
+Thu, 01 Oct 2020 01:52:12 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:29:54 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Sat, 31 Oct 2020 00:29:57 GMT | INFO | loggers.log | Connected to mongodb | 
+Sat, 31 Oct 2020 00:31:47 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:31:47 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:31:47 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:31:47 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:34:33 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:34:33 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:34:33 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:34:34 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:44:45 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
+Sat, 31 Oct 2020 00:46:35 GMT | ERROR | loggers.log | ERROR! User already exists.  | 
+Sat, 31 Oct 2020 00:46:46 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:46:47 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:46:53 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:46:53 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:47:07 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:47:07 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:48:04 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:48:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:48:06 GMT | INFO | loggers.log | User user1 added images to users's database  | 
+Sat, 31 Oct 2020 00:49:56 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:49:56 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:49:57 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:50:03 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:03 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:03 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:03 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:28 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:28 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:54 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:50:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:51:34 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:51:34 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:51:47 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:51:47 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:51:57 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:52:01 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:52:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:52:01 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 00:52:01 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:53:00 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:53:00 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:53:00 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:53:00 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:53:00 GMT | ERROR | loggers.log | unAuthorized User | 
+Sat, 31 Oct 2020 00:53:32 GMT | INFO | loggers.log | user has logged in | 
+Sat, 31 Oct 2020 00:53:32 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 00:53:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:03:28 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:03:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:03:28 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:03:28 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:03:55 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:15:59 GMT | INFO | loggers.log | Serving is running on PORT 8081 | 
+Sat, 31 Oct 2020 01:15:59 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:15:59 GMT | INFO | loggers.log | Connected to mongodb | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:17:43 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:18:05 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:18:05 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:18:05 GMT | INFO | loggers.log | User user communicated with the server | 
+Sat, 31 Oct 2020 01:18:05 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:20:29 GMT | ERROR | loggers.log | ERROR! email/password don't match | 
+Sat, 31 Oct 2020 01:20:36 GMT | INFO | loggers.log | user1 has logged in | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:20:37 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:30:26 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 31 Oct 2020 01:30:26 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:30:26 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:53:14 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 31 Oct 2020 01:53:16 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:53:16 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:54:59 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:55:04 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:55:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:55:04 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:55:04 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:55:13 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:55:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:55:13 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:55:13 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:56:02 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | Verified User has valid token | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:56:44 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:56:50 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:56:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:56:50 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:56:50 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:59:22 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:59:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 01:59:22 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 01:59:22 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | User is connect to Socket IO  | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | User user1 communicated with the server | 
+Sat, 31 Oct 2020 02:15:33 GMT | INFO | loggers.log | Current User is permitted access to this route | 

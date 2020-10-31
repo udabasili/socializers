@@ -3,19 +3,19 @@
     display: grid;
     justify-content: center;
     min-height: 80vh;
-    grid-template-columns:  repeat(3, 30%);
+    grid-template-columns:  repeat(auto-fill, minmax(360px, ));
     column-gap: 2%;
     row-gap: 3rem;
 
     @include response-website(phone) {
         width: 100vw;
-        grid-template-columns: repeat(2, 40%);
+        grid-template-columns: 50%;
         column-gap: 5%;
         height: 40vh;
     }
 
     @include response-website(tab-port) {
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(2, 40%);
         height: 40vh;
 
 
@@ -23,7 +23,8 @@
     }
 
     @include response-website(tab-land) {
-                height: 40vh;
+        grid-template-columns: repeat(2, 40%);
+        height: 40vh;
 
     }
 

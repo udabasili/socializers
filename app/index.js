@@ -10,7 +10,6 @@ const cors = require('cors')
 app.use(mongoSanitize());
 app.use(xss());
 app.use(cors())
-app.use(helmet())
 
 //others
 
