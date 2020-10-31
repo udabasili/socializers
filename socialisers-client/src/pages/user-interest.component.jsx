@@ -7,12 +7,14 @@ import SelectPure from "select-pure";
 import { connect } from 'react-redux';
 import { addUserInterest } from "../redux/user/user.actions";
 import { Redirect } from 'react-router-dom';
+import Loading from '../components/loading.componet';
 
 
 class UserInterest extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading: false,
             paramsId: props.match.params ? props.match.params.currentUserId : null,
             currentUser:props.currentUser,
             userData:{
@@ -100,9 +102,17 @@ class UserInterest extends Component {
     }
     onSubmitHandler(e){
         e.preventDefault()
+        this.setState(prevState =>({
+			...prevState,
+			loading: true
+		}))
         const {userData, paramsId} = this.state 
         this.props.addUserInterest(userData,paramsId)
         .then((response)=> {
+            this.setState(prevState =>({
+                ...prevState,
+                loading: false
+            }))
             this.props.history.push("/") 
             }
         )
@@ -110,10 +120,11 @@ class UserInterest extends Component {
 
 
     render(){
-        const { currentUser, userData, paramsId } = this.state;
+        const { currentUser, userData, paramsId, loading } = this.state;
         return(
             currentUser._id === paramsId ?
                 <div className="user-info-form">
+                    {loading && <Loading/>}
                     <form className="form-001" onSubmit={this.onSubmitHandler}>
                         <div className="form-001__component ">
                             <label className="form-001__label" htmlFor="bio">Bio</label>

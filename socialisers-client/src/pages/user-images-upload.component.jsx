@@ -11,6 +11,7 @@ class UserImageUpload extends Component {
     constructor(props){
         super(props);
         this.state = { 
+            loading: false,
             paramsId: props.match.params ? props.match.params.currentUserId : null,
             currentUser:props.currentUser,
             usersImagesComponents: [1,2],
@@ -64,12 +65,20 @@ class UserImageUpload extends Component {
         )
     }
     submitImagesHandler = () => {
+         this.setState(prevState =>({
+			...prevState,
+			loading: true
+		}))
         const {currentUser, submitImages} = this.props;
         const imageData = new FormData();
         Object.values(this.state.userImages).forEach((image) => {
             imageData.append("file",image["imageBlob"] )
         })
         submitImages(imageData, currentUser._id).then(()=>{
+             this.setState(prevState =>({
+                ...prevState,
+                loading: false
+            }))
             this.props.history.push(`/user-interests/${currentUser._id}/add`)
         })
         
@@ -86,11 +95,20 @@ class UserImageUpload extends Component {
     }
 
     render() { 
-        const {usersImagesComponents, showModal, currentUser,  paramsId, imageFile, userImages, cardId} = this.state
+        const {
+            usersImagesComponents, 
+            showModal, 
+            currentUser,  
+            paramsId, 
+            imageFile, 
+            userImages, 
+            loading,
+            cardId} = this.state
         
         return (  
             currentUser._id === paramsId ?
             <div className="user-images-upload">
+                {loading && <Loading/>}
                 { (showModal && imageFile) && 
                     <ImageModal 
                         imageFile={imageFile} 

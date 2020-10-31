@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { getLocation, addUserInfo, editUserInfo } from '../redux/user/user.actions';
 import { connect } from 'react-redux';
+import Loading from '../components/loading.componet';
 
 
 class UserInfoForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading: false,
             userId: props.match.params ? props.match.params.currentUserId : null,
             mode: props.match.params ? props.match.params.mode : null,
             currentUser:props.currentUser,
@@ -89,16 +91,34 @@ class UserInfoForm extends Component {
 
     onSubmitHandler(e){
         e.preventDefault()
+        this.setState(prevState =>({
+			...prevState,
+			loading: true
+		}))
         const {userData, userId, mode} = this.state;
         const {addUserInformation, history, editUserInformation} = this.props; 
         switch (mode) {
             case 'add':
                 addUserInformation(userData, userId)
-                    .then(() => history.push(`/image-upload/${userId}/add`))
+                    .then(() => {
+                        this.setState(prevState =>({
+                            ...prevState,
+                            loading: false
+                        }))
+                        history.push(`/image-upload/${userId}/add`)
+                        
+                    })
                 break;
             case 'edit':
                 editUserInformation(userData, userId)
-                    .then(() => history.goBack())
+                    .then(() =>{
+                        this.setState(prevState =>({
+                            ...prevState,
+                            loading: false
+                        }))
+                        history.goBack()
+                        
+                    })
                 break;
         
             default:
@@ -108,11 +128,12 @@ class UserInfoForm extends Component {
     }
 
     render() { 
-        const {currentUser, userData, userId, mode} = this.state;
+        const {currentUser, userData, userId, mode, loading} = this.state;
 
         return ( 
             currentUser._id === userId && mode ?
                 <div className="user-info-form">
+                    {loading && <Loading/>}
                     <form className="form-001" onSubmit={this.onSubmitHandler} >
                         <div className="form-001__component float-left">
                             <label className="form-001__label" htmlFor="name">Name</label>
